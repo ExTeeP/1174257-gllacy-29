@@ -8,34 +8,75 @@
 </head>
 
 <body style="background-color: #849D8F;">
-  <header>
-    <nav>
-      <a>
-        <img src="img/logo-main.svg" width="154" height="64" alt="Логотип Глейси Шоп">
-      </a>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="img/logo-main.svg" width="154" height="64" alt="Логотип Глейси Шоп">
+    </a>
 
-      <ul>
-        <li>
-          <a href="catalog.html">Каталог</a>
+    <nav class="main-nav">
+
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Каталог</a>
         </li>
-        <li>
-          <a href="blank.html">Доставка и оплата</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="blank.html">Доставка и оплата</a>
         </li>
-        <li>
-          <a href="blank.html">О компании</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="blank.html">О компании</a>
         </li>
       </ul>
 
-      <div>
-        <div>
-          <button type="button">Поиск</button>
+      <div class="main-nav__right-menu">
+
+        <div class="main-search">
+          <a class="main-search__link" type="button">Поиск</a>
+
+          <form class="main-search__form visually-hidden" action="https://echo.htmlacademy.ru" method="get">
+            <input class="main-search__field" name="search" type="search" placeholder="Крем-брюле">
+            <button class="visually-hidden" type="submit">Найти мороженное</button>
+          </form>
         </div>
-        <div>
-          <a href="blank.html">Вход</a>
+
+        <div class="sing-in">
+          <a class="sing-in__link" href="blank.html">Вход</a>
+
+          <form class="sing-in__form visually-hidden" action="https://echo.htmlacademy.ru" method="get">
+            <p class="sing-in__item">
+              <label class="visually-hidden" for="login-email">Введите почту</label>
+              <input class="sing-in__field" type="email" name="email" id="login-email" plaseholder="email@example.com">
+            </p>
+            <p class="sing-in__item">
+              <label class="visually-hidden" for="login-pass">Введите пароль</label>
+              <input class="sing-in__field" type="password" name="password" id="login-pass" placeholder="......">
+            </p>
+            <p class="sing-in__item">
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </p>
+            <p class="sing-in__item">
+              <button class="sing-in__submit-btn" type="submit">Войти</button>
+            </p>
+          </form>
         </div>
-        <div>
-          <a href="blank.html">Корзина</a>
-        </div>
+
+        <ul class="card">
+          <li>
+            <a href="blank.html">Корзина</a>
+
+            <ul class="main-nav__list main-nav__list--dropdown visually-hidden">
+              <li class="main-nav__item">
+                <p>В вашей корзине пусто</p>
+              </li>
+              <li>
+                <p>Итого : 0</p>
+                <a href="#">Оформить заказ</a>
+              </li>
+            </ul>
+
+          </li>
+        </ul>
+
       </div>
     </nav>
 
