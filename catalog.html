@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог сливочного мороженого</title>
+  <style>
+    body {
+      background-color: #849D8F;
+    }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__link" href="index.html">
+      <div class="page-header__logo">
+        <img src="img/logo-main.svg" width="154" height="64" alt="Логотип Глейси Шоп">
+      </div>
+    </a>
+
+    <nav class="main-nav">
+      <div class="main-nav__left">
+
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">Каталог</a>
+
+            <ul class="main-nav__dropdown catalog-dropdown">
+              <li class="catalog-dropdown__item">
+                <a class="catalog-dropdown__link catalog-dropdown__link--news" href="#">Новинки</a>
+              </li>
+              <li class="catalog-dropdown__item">
+                <a class="catalog-dropdown__link" href="#">Сливочное</a>
+              </li>
+              <li class="catalog-dropdown__item">
+                <a class="catalog-dropdown__link" href="#">Щербеты</a>
+              </li>
+              <li class="catalog-dropdown__item">
+                <a class="catalog-dropdown__link" href="#">Фруктовый лед</a>
+              </li>
+              <li class="catalog-dropdown__item">
+                <a class="catalog-dropdown__link" href="#">Мелорин</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="blank.html">Доставка и оплата</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="blank.html">О компании</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="main-nav__right">
+
+        <div class="main-nav__item main-search">
+          <a class="main-nav__link main-nav__link--btn main-search__link">Поиск</a>
+
+          <form class="main-nav__dropdown main-search__dropdown-form visually-hidden"
+            action="https://echo.htmlacademy.ru" method="get">
+            <input class="main-input main-search__input" name="search" type="search" placeholder="Крем-брюле">
+            <button class="visually-hidden" type="submit">Найти мороженое</button>
+          </form>
+        </div>
+
+        <div class="main-nav__item sing-in">
+          <a class="main-nav__link main-nav__link--btn sing-in__link" href="blank.html">Вход</a>
+
+          <form class="main-nav__dropdown sing-in__dropdown-form visually-hidden" action="https://echo.htmlacademy.ru"
+            method="get">
+            <p class="sing-in__item">
+              <label class="visually-hidden" for="login-email">Введите почту</label>
+              <input class="main-input sing-in__input" type="email" name="email" id="login-email"
+                placeholder="email@example.com">
+            </p>
+            <p class="sing-in__item">
+              <label class="visually-hidden" for="login-pass">Введите пароль</label>
+              <input class="main-input sing-in__input" type="password" name="password" id="login-pass"
+                placeholder="......">
+            </p>
+            <p class="sing-in__item">
+              <a class="sing-in__link sing-in__link--form" href="#">Забыли пароль?</a>
+              <a class="sing-in__link sing-in__link--form" href="#">Новая регистрация</a>
+            </p>
+            <p class="sing-in__item">
+              <button class="main-btn sing-in__btn" type="submit">Войти</button>
+            </p>
+          </form>
+        </div>
+
+        <div class="main-nav__item main-cart">
+          <a class="main-nav__link main-nav__link--btn main-cart__link" href="blank.html">Корзина</a>
+
+          <ul class="main-cart__list visually-hidden">
+            <li class="main-cart__item">
+              <p>В вашей корзине пусто</p>
+            </li>
+            <li class="main-cart__item">
+              <p class="main-cart__total">Итого : <span id="total-amount">0</span></p>
+              <a class="main-btn main-cart__btn" href="#">Оформить заказ</a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="page-header__info">
+      <p>с 10 до 20, ежедневно</p>
+      <a href="tel:+78124502525">8 812 450-25-25</a>
+    </div>
+  </header>
+
+  <main>
+    <h1></h1>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+
+      <ul class="main-footer__social">
+        <li>
+          <a href="blank.html" aria-label="Наша соц. сеть в Фейсбук">#</a>
+        </li>
+        <li>
+          <a href="blank.html" aria-label="Наша соц. сеть во Вконтакте">#</a>
+        </li>
+        <li>
+          <a href="blank.html" aria-label="Наша соц. сеть в Инстаграме">#</a>
+        </li>
+        <li>
+          <a href="blank.html" aria-label="Наша соц. сеть в Твиттере">#</a>
+        </li>
+      </ul>
+
+      <ul class="main-footer__info">
+        <li>
+          <a href="blank.html">Для поставщиков</a>
+        </li>
+        <li>
+          <a href="blank.html">Наши документы</a>
+        </li>
+        <li>
+          <a href="blank.html">О производстве</a>
+        </li>
+        <li>
+          <a href="blank.html">Экологические стандарты</a>
+        </li>
+      </ul>
+
+      <p class="main-footer__copyright">
+        <span>Сделано в HTML Academy © 2019</span>
+        <img src="img/htmlacademy-logo.svg" width="108" height="39" alt="Логотип HTML Academy">
+      </p>
+
+    </div>
+  </footer>
+</body>
+
+</html>
