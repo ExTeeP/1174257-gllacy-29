@@ -25,66 +25,102 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="img/logo-main.svg" width="154" height="64" alt="Логотип Глейси Шоп">
+    <a class="page-header__link">
+      <div class="page-header__logo">
+        <img src="img/logo-main.svg" width="154" height="64" alt="Логотип Глейси Шоп">
+      </div>
     </a>
 
     <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Каталог</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="blank.html">Доставка и оплата</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="blank.html">О компании</a>
-        </li>
-      </ul>
+      <div class="main-nav__left">
+        <!--
+            .main-nav__left .main-nav__item - для позиционирования внутри этого блока между элементами
+          -->
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог</a>
 
-      <div class="main-nav__right-menu">
+            <ul class="main-nav__dropdown catalog-dropdown">
+              <li class="catalog-dropdown__item">
+                <a class="catalog-dropdown__link catalog-dropdown__link--news" href="#">Новинки</a>
+              </li>
+              <li class="catalog-dropdown__item">
+                <a class="catalog-dropdown__link" href="#">Сливочное</a>
+              </li>
+              <li class="catalog-dropdown__item">
+                <a class="catalog-dropdown__link" href="#">Щербеты</a>
+              </li>
+              <li class="catalog-dropdown__item">
+                <a class="catalog-dropdown__link" href="#">Фруктовый лед</a>
+              </li>
+              <li class="catalog-dropdown__item">
+                <a class="catalog-dropdown__link" href="#">Мелорин</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="blank.html">Доставка и оплата</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="blank.html">О компании</a>
+          </li>
+        </ul>
 
-        <div class="main-search">
-          <a class="main-search__link">Поиск</a>
+      </div>
 
-          <form class="main-search__form visually-hidden" action="https://echo.htmlacademy.ru" method="get">
-            <input class="main-search__field" name="search" type="search" placeholder="Крем-брюле">
+      <div class="main-nav__right">
+        <!--
+            .main-nav__right .main-nav__item - для позиционирования внутри этого блока между элементами
+          -->
+        <div class="main-nav__item main-search">
+          <a class="main-search__link main-nav__link main-nav__link--btn">Поиск</a>
+          <!--
+            main-search__link - для иконки
+            main-nav__link - общие стили
+            main-nav__link--btn - стили для фона под кнопку
+          -->
+          <form class="main-nav__dropdown main-search__dropdown-form visually-hidden"
+            action="https://echo.htmlacademy.ru" method="get">
+            <input class="main-nav__field main-search__field" name="search" type="search" placeholder="Крем-брюле">
             <button class="visually-hidden" type="submit">Найти мороженое</button>
           </form>
         </div>
 
-        <div class="sing-in">
-          <a class="sing-in__link" href="blank.html">Вход</a>
+        <div class="main-nav__item sing-in">
+          <a class="sing-in__link main-nav__link main-nav__link--btn" href="blank.html">Вход</a>
 
-          <form class="sing-in__form visually-hidden" action="https://echo.htmlacademy.ru" method="get">
+          <form class="main-nav__dropdown sing-in__dropdown-form visually-hidden" action="https://echo.htmlacademy.ru"
+            method="get">
             <p class="sing-in__item">
               <label class="visually-hidden" for="login-email">Введите почту</label>
-              <input class="sing-in__field" type="email" name="email" id="login-email" placeholder="email@example.com">
+              <input class="main-nav__field sing-in__field" type="email" name="email" id="login-email"
+                placeholder="email@example.com">
             </p>
             <p class="sing-in__item">
               <label class="visually-hidden" for="login-pass">Введите пароль</label>
-              <input class="sing-in__field" type="password" name="password" id="login-pass" placeholder="......">
+              <input class="main-nav__field sing-in__field" type="password" name="password" id="login-pass"
+                placeholder="......">
             </p>
             <p class="sing-in__item">
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
+              <a class="sing-in__link sing-in__link--form" href="#">Забыли пароль?</a>
+              <a class="sing-in__link sing-in__link--form" href="#">Новая регистрация</a>
             </p>
             <p class="sing-in__item">
-              <button class="sing-in__submit-btn" type="submit">Войти</button>
+              <button class="sing-in__btn main-btn" type="submit">Войти</button>
             </p>
           </form>
         </div>
 
-        <div class="main-card">
-          <a class="main-card__link" href="blank.html">Корзина</a>
+        <div class="main-nav__item main-cart">
+          <a class="main-cart__link main-nav__link main-nav__link--btn" href="blank.html">Корзина</a>
 
-          <ul class="main-card__list visually-hidden">
-            <li class="main-card__item">
+          <ul class="main-cart__list visually-hidden">
+            <li class="main-cart__item">
               <p>В вашей корзине пусто</p>
             </li>
-            <li class="main-card__item">
-              <p class="main-card__total">Итого : <span id="total-amount">0</span></p>
-              <a class="main-card__link main-card__link--buy" href="#">Оформить заказ</a>
+            <li class="main-cart__item">
+              <p class="main-cart__total">Итого : <span id="total-amount">0</span></p>
+              <a class="main-cart__btn main-btn" href="#">Оформить заказ</a>
             </li>
           </ul>
 
