@@ -151,7 +151,7 @@
           <a class="breadcrumb__link" href="blank.html">Каталог</a>
         </li>
         <li class="breadcrumb__item">
-          <a class="breadcrumb__link breadcrumb__link--active" aria-current="Вы здесь">Сливочное</a>
+          <a class="breadcrumb__link breadcrumb__link--active" aria-current="location">Сливочное</a>
         </li>
       </ol>
 
@@ -191,20 +191,56 @@
 
           <ul class="filter__list">
             <li class="filter__item">
-              <input type="radio" name="fatness" id="radio-fat-1" value="fatness-0">
-              <label for="radio-fat-1">0%</label>
+              <label class="custom-action custom-action--radio">
+                <input class="custom-action__input custom-action__input--radio" type="radio" name="fatness"
+                  value="fatness-0">
+                <svg class="custom-action__icon custom-action__icon--radio" width="22" height="22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 3.52A7.48 7.48 0 113.52 11 7.489 7.489 0 0111 3.52zM11 0a11 11 0 100 22 11 11 0 000-22z"
+                    fill="#fff" fill-opacity=".8" />
+                  <path d="M11 14.96a3.96 3.96 0 100-7.92 3.96 3.96 0 000 7.92z" fill="#fff" fill-opacity=".8" />
+                </svg>
+                <span class="custom-action__label custom-action__label--radio">0%</span>
+              </label>
             </li>
             <li class="filter__item">
-              <input type="radio" name="fatness" id="radio-fat-2" value="fatness-10" checked>
-              <label for="radio-fat-2">до 10%</label>
+              <label class="custom-action custom-action--radio">
+                <input class="custom-action__input custom-action__input--radio" type="radio" name="fatness"
+                  value="fatness-10" checked>
+                <svg class="custom-action__icon custom-action__icon--radio" width="22" height="22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 3.52A7.48 7.48 0 113.52 11 7.489 7.489 0 0111 3.52zM11 0a11 11 0 100 22 11 11 0 000-22z"
+                    fill="#fff" fill-opacity=".8" />
+                  <path d="M11 14.96a3.96 3.96 0 100-7.92 3.96 3.96 0 000 7.92z" fill="#fff" fill-opacity=".8" />
+                </svg>
+                <span class="custom-action__label custom-action__label--radio">до 10%</span>
+              </label>
             </li>
             <li class="filter__item">
-              <input type="radio" name="fatness" id="radio-fat-3" value="fatness-30">
-              <label for="radio-fat-3">до 30%</label>
+              <label class="custom-action custom-action--radio">
+                <input class="custom-action__input custom-action__input--radio" type="radio" name="fatness"
+                  value="fatness-30">
+                <svg class="custom-action__icon custom-action__icon--radio" width="22" height="22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 3.52A7.48 7.48 0 113.52 11 7.489 7.489 0 0111 3.52zM11 0a11 11 0 100 22 11 11 0 000-22z"
+                    fill="#fff" fill-opacity=".8" />
+                  <path d="M11 14.96a3.96 3.96 0 100-7.92 3.96 3.96 0 000 7.92z" fill="#fff" fill-opacity=".8" />
+                </svg>
+                <span class="custom-action__label custom-action__label--radio">до 30%</span>
+              </label>
             </li>
             <li class="filter__item">
-              <input type="radio" name="fatness" id="radio-fat-4" value="fatness-30+">
-              <label for="radio-fat-4">выше 30%</label>
+              <label class="custom-action custom-action--radio">
+                <input class="custom-action__input custom-action__input--radio" type="radio" name="fatness"
+                  value="fatness-30+">
+                <svg class="custom-action__icon custom-action__icon--radio" width="22" height="22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 3.52A7.48 7.48 0 113.52 11 7.489 7.489 0 0111 3.52zM11 0a11 11 0 100 22 11 11 0 000-22z"
+                    fill="#fff" fill-opacity=".8" />
+                  <path d="M11 14.96a3.96 3.96 0 100-7.92 3.96 3.96 0 000 7.92z" fill="#fff" fill-opacity=".8" />
+                </svg>
+                <span class="custom-action__label custom-action__label--radio">выше 30%</span>
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -214,24 +250,79 @@
 
           <ul class="filter__list">
             <li class="filter__item">
-              <input type="checkbox" name="chocolate" id="additive-1" value="on" checked>
-              <label for="additive-1">шоколадные</label>
+              <label class="custom-action custom-action--checkbox">
+                <input class="custom-action__input custom-action__input--checkbox" type="checkbox" name="chocolate"
+                  id="additive-1" value="on" checked>
+                <svg class="custom-action__icon custom-action__icon--checkbox" width="24" height="20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.686 6.513L4.09 8.965l7.135 6.774L24 3.626l-2.595-2.46-10.18 9.651-4.54-4.304z" fill="#fff"
+                    fill-opacity=".8" />
+                  <path
+                    d="M19.259 17.391c0 .23-.097.452-.269.615a.943.943 0 01-.648.255H2.752a.943.943 0 01-.65-.255.847.847 0 01-.268-.615V2.61c0-.23.097-.452.269-.615a.943.943 0 01.648-.255H18.26L19.71.357A2.867 2.867 0 0018.341 0H2.752c-.73 0-1.43.275-1.946.764A2.542 2.542 0 000 2.61V17.39c0 .692.29 1.356.806 1.845A2.83 2.83 0 002.75 20h15.59c.73 0 1.43-.275 1.946-.764.516-.49.806-1.153.806-1.845V8.843l-1.834 1.74v6.808z"
+                    fill="#fff" fill-opacity=".8" />
+                </svg>
+                <span class="custom-action__label custom-action__label--checkbox">шоколадные</span>
+              </label>
             </li>
             <li class="filter__item">
-              <input type="checkbox" name="sugar" id="additive-2" value="on" checked>
-              <label for="additive-2">сахарные присыпки</label>
+              <label class="custom-action custom-action--checkbox">
+                <input class="custom-action__input custom-action__input--checkbox" type="checkbox" name="sugar"
+                  id="additive-2" value="on" checked>
+                <svg class="custom-action__icon custom-action__icon--checkbox" width="24" height="20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.686 6.513L4.09 8.965l7.135 6.774L24 3.626l-2.595-2.46-10.18 9.651-4.54-4.304z" fill="#fff"
+                    fill-opacity=".8" />
+                  <path
+                    d="M19.259 17.391c0 .23-.097.452-.269.615a.943.943 0 01-.648.255H2.752a.943.943 0 01-.65-.255.847.847 0 01-.268-.615V2.61c0-.23.097-.452.269-.615a.943.943 0 01.648-.255H18.26L19.71.357A2.867 2.867 0 0018.341 0H2.752c-.73 0-1.43.275-1.946.764A2.542 2.542 0 000 2.61V17.39c0 .692.29 1.356.806 1.845A2.83 2.83 0 002.75 20h15.59c.73 0 1.43-.275 1.946-.764.516-.49.806-1.153.806-1.845V8.843l-1.834 1.74v6.808z"
+                    fill="#fff" fill-opacity=".8" />
+                </svg>
+                <span class="custom-action__label custom-action__label--checkbox">сахарные присыпки</span>
+              </label>
             </li>
             <li class="filter__item">
-              <input type="checkbox" name="fruits" id="additive-3" value="on">
-              <label for="additive-3">фрукты</label>
+              <label class="custom-action custom-action--checkbox">
+                <input class="custom-action__input custom-action__input--checkbox" type="checkbox" name="fruits"
+                  id="additive-3" value="on">
+                <svg class="custom-action__icon custom-action__icon--checkbox" width="24" height="20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.686 6.513L4.09 8.965l7.135 6.774L24 3.626l-2.595-2.46-10.18 9.651-4.54-4.304z" fill="#fff"
+                    fill-opacity=".8" />
+                  <path
+                    d="M19.259 17.391c0 .23-.097.452-.269.615a.943.943 0 01-.648.255H2.752a.943.943 0 01-.65-.255.847.847 0 01-.268-.615V2.61c0-.23.097-.452.269-.615a.943.943 0 01.648-.255H18.26L19.71.357A2.867 2.867 0 0018.341 0H2.752c-.73 0-1.43.275-1.946.764A2.542 2.542 0 000 2.61V17.39c0 .692.29 1.356.806 1.845A2.83 2.83 0 002.75 20h15.59c.73 0 1.43-.275 1.946-.764.516-.49.806-1.153.806-1.845V8.843l-1.834 1.74v6.808z"
+                    fill="#fff" fill-opacity=".8" />
+                </svg>
+                <span class="custom-action__label custom-action__label--checkbox">фрукты</span>
+              </label>
             </li>
             <li class="filter__item">
-              <input type="checkbox" name="syrup" id="additive-4" value="on">
-              <label for="additive-4">сиропы</label>
+              <label class="custom-action custom-action--checkbox">
+                <input class="custom-action__input custom-action__input--checkbox" type="checkbox" name="syrup"
+                  id="additive-4" value="on">
+                <svg class="custom-action__icon custom-action__icon--checkbox" width="24" height="20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.686 6.513L4.09 8.965l7.135 6.774L24 3.626l-2.595-2.46-10.18 9.651-4.54-4.304z" fill="#fff"
+                    fill-opacity=".8" />
+                  <path
+                    d="M19.259 17.391c0 .23-.097.452-.269.615a.943.943 0 01-.648.255H2.752a.943.943 0 01-.65-.255.847.847 0 01-.268-.615V2.61c0-.23.097-.452.269-.615a.943.943 0 01.648-.255H18.26L19.71.357A2.867 2.867 0 0018.341 0H2.752c-.73 0-1.43.275-1.946.764A2.542 2.542 0 000 2.61V17.39c0 .692.29 1.356.806 1.845A2.83 2.83 0 002.75 20h15.59c.73 0 1.43-.275 1.946-.764.516-.49.806-1.153.806-1.845V8.843l-1.834 1.74v6.808z"
+                    fill="#fff" fill-opacity=".8" />
+                </svg>
+                <span class="custom-action__label custom-action__label--checkbox">сиропы</span>
+              </label>
             </li>
             <li class="filter__item">
-              <input type="checkbox" name="jam" id="additive-5" value="on">
-              <label for="additive-5">джемы</label>
+              <label class="custom-action custom-action--checkbox">
+                <input class="custom-action__input custom-action__input--checkbox" type="checkbox" name="jam"
+                  id="additive-5" value="on">
+                <svg class="custom-action__icon custom-action__icon--checkbox" width="24" height="20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.686 6.513L4.09 8.965l7.135 6.774L24 3.626l-2.595-2.46-10.18 9.651-4.54-4.304z" fill="#fff"
+                    fill-opacity=".8" />
+                  <path
+                    d="M19.259 17.391c0 .23-.097.452-.269.615a.943.943 0 01-.648.255H2.752a.943.943 0 01-.65-.255.847.847 0 01-.268-.615V2.61c0-.23.097-.452.269-.615a.943.943 0 01.648-.255H18.26L19.71.357A2.867 2.867 0 0018.341 0H2.752c-.73 0-1.43.275-1.946.764A2.542 2.542 0 000 2.61V17.39c0 .692.29 1.356.806 1.845A2.83 2.83 0 002.75 20h15.59c.73 0 1.43-.275 1.946-.764.516-.49.806-1.153.806-1.845V8.843l-1.834 1.74v6.808z"
+                    fill="#fff" fill-opacity=".8" />
+                </svg>
+                <span class="custom-action__label custom-action__label--checkbox">джемы</span>
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -383,9 +474,9 @@
       <div class="pagination">
         <button class="pagination__btn pagination__btn--prev" aria-label="На прошлую страницу" disabled></button>
 
-        <ul class="pagination__list">
+        <ol class="pagination__list">
           <li class="pagination__item">
-            <a class="pagination__link pagination__link--active">1</a>
+            <a class="pagination__link pagination__link--active" aria-current="location">1</a>
           </li>
           <li class="pagination__item">
             <a class="pagination__link" href="blank.html">2</a>
@@ -399,9 +490,9 @@
           <li class="pagination__item">
             <a class="pagination__link" href="blank.html">5</a>
           </li>
-        </ul>
+        </ol>
 
-        <button class="pagination__btn pagination__btn--next" aria-label="На слудующую страницу"></button>
+        <button class="pagination__btn pagination__btn--next" aria-label="На следующую страницу"></button>
       </div>
     </section>
 
