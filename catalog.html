@@ -89,14 +89,40 @@
         </div>
 
         <div class="main-nav__item main-cart">
-          <a class="main-nav__link main-nav__link--btn main-cart__link" href="blank.html">Корзина</a>
+          <a class="main-nav__link main-nav__link--btn main-cart__link" href="blank.html">2 товара</a>
 
           <ul class="main-cart__list visually-hidden">
             <li class="main-cart__item">
-              <p>В вашей корзине пусто</p>
+              <table>
+                <thead class="visually-hidden">
+                  <tr>
+                    <td>Удалить из корзины</td>
+                    <td>Изображение товара</td>
+                    <td>Название товара</td>
+                    <td>Колличество и сумма за кг</td>
+                    <td>Сумма в целом</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><button type="button"><span class="visually-hidden">Удалить</span></button></td>
+                    <td><img src="img/ice-creame__1.png" width="33" height="33" alt=""></td>
+                    <td>Пломбир с апельсиновым джемом</td>
+                    <td>1,5 кг х <span>200 руб.</span></td>
+                    <td>300 руб.</td>
+                  </tr>
+                  <tr>
+                    <td><button type="button"><span class="visually-hidden">Удалить</span></button></td>
+                    <td><img src="img/ice-creame__3.png" width="33" height="33" alt=""></td>
+                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td>1,5 кг х <span>300 руб.</span></td>
+                    <td>450 руб.</td>
+                  </tr>
+                </tbody>
+              </table>
             </li>
             <li class="main-cart__item">
-              <p class="main-cart__total">Итого : <span id="total-amount">0</span></p>
+              <p class="main-cart__total">Итого : <span id="total-amount">750</span></p>
               <a class="main-btn main-cart__btn" href="#">Оформить заказ</a>
             </li>
           </ul>
@@ -112,8 +138,262 @@
     </div>
   </header>
 
-  <main>
-    <h1></h1>
+  <main class="page-inner">
+    <h1>Сливочное мороженное</h1>
+
+    <section class="breadsrumbs">
+      <ul class="breadsrumbs__list">
+        <li class="breadsrumbs__item">
+          <a class="breadsrumbs__link" href="blank.html">Главная</a>
+        </li>
+        <li class="breadsrumbs__item">
+          <a class="breadsrumbs__link" href="blank.html">Каталог</a>
+        </li>
+        <li class="breadsrumbs__item">
+          <a class="breadsrumbs__link breadsrumbs__link--active">Сливочное</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="filter">
+      <h2 class="visually-hidden">Фильтр по товарам</h2>
+      <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
+
+        <fieldset class="filter__item">
+          <legend class="filter__title">Сортировка</legend>
+
+          <select name="sort">
+            <option value="hit" selected>по популярности</option>
+            <option value="low-cost">сначала недорогие</option>
+            <option value="high-cost">сначала дорогие</option>
+            <option value="fat">по жирности</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Цена: <span>100</span> ₽ – <span>500</span> ₽</legend>
+
+          <input type="range" name="" id="">
+        </fieldset>
+
+        <fieldset>
+          <legend>Жирность:</legend>
+
+          <ul>
+            <li>
+              <input type="radio" name="fatness" id="radio-fat-1" value="fatness-0">
+              <label for="radio-fat-1">0%</label>
+            </li>
+            <li>
+              <input type="radio" name="fatness" id="radio-fat-2" value="fatness-10" checked>
+              <label for="radio-fat-2">до 10%</label>
+            </li>
+            <li>
+              <input type="radio" name="fatness" id="radio-fat-3" value="fatness-30">
+              <label for="radio-fat-3">до 30%</label>
+            </li>
+            <li>
+              <input type="radio" name="fatness" id="radio-fat-4" value="fatness-30+">
+              <label for="radio-fat-4">выше 30%</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Наполнители:</legend>
+
+          <ul>
+            <li>
+              <input type="checkbox" name="chocolate" id="additive-1" value="on" checked>
+              <label for="additive-1">шоколадные</label>
+            </li>
+            <li>
+              <input type="checkbox" name="sugar" id="additive-2" value="on" checked>
+              <label for="additive-2">сахарные присыпки</label>
+            </li>
+            <li>
+              <input type="checkbox" name="fruits" id="additive-3" value="on">
+              <label for="additive-3">фрукты</label>
+            </li>
+            <li>
+              <input type="checkbox" name="syrup" id="additive-4" value="on">
+              <label for="additive-4">сиропы</label>
+            </li>
+            <li>
+              <input type="checkbox" name="jam" id="additive-5" value="on">
+              <label for="additive-5">джемы</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <div>
+          <button type="submit">Применить</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="products">
+      <h2 class="visually-hidden">Каталог продукции</h2>
+
+      <ul class="products__list">
+        <li class="products__item">
+          <article class="sundae-card">
+            <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+            <img src="img/ice-creame__2.png" width="267" height="267" alt="">
+            <p>310 ₽<span>/кг</span></p>
+
+            <div class="sundae-card__overlay">
+              <a href="blank.html">Быстрый просмотр</a>
+            </div>
+          </article>
+        </li>
+        <li class="products__item">
+          <article class="sundae-card">
+            <h3>Сливочно-кофейное с кусочками шоколада</h3>
+            <img src="img/ice-creame__2.png" width="267" height="267" alt="">
+            <p>380 ₽<span>/кг</span></p>
+
+            <div class="sundae-card__overlay">
+              <a href="blank.html">Быстрый просмотр</a>
+            </div>
+          </article>
+        </li>
+        <li class="products__item">
+          <article class="sundae-card">
+            <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+            <img src="img/ice-creame__2.png" width="267" height="267" alt="">
+            <p>355 ₽<span>/кг</span></p>
+
+            <div class="sundae-card__overlay">
+              <a href="blank.html">Быстрый просмотр</a>
+            </div>
+          </article>
+        </li>
+        <li class="products__item">
+          <article class="sundae-card">
+            <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+            <img src="img/ice-creame__2.png" width="267" height="267" alt="">
+            <p>415 ₽<span>/кг</span></p>
+
+            <div class="sundae-card__overlay">
+              <a href="blank.html">Быстрый просмотр</a>
+            </div>
+          </article>
+        </li>
+        <li class="products__item">
+          <article class="sundae-card">
+            <h3>Сливочное с брусничным джемом</h3>
+            <img src="img/ice-creame__2.png" width="267" height="267" alt="">
+            <p>325 ₽<span>/кг</span></p>
+
+            <div class="sundae-card__overlay">
+              <a href="blank.html">Быстрый просмотр</a>
+            </div>
+          </article>
+        </li>
+        <li class="products__item">
+          <article class="sundae-card">
+            <h3>Сливочно-черничное с цельными ягодами черники</h3>
+            <img src="img/ice-creame__2.png" width="267" height="267" alt="">
+            <p>410 ₽<span>/кг</span></p>
+
+            <div class="sundae-card__overlay">
+              <a href="blank.html">Быстрый просмотр</a>
+            </div>
+          </article>
+        </li>
+        <li class="products__item">
+          <article class="sundae-card">
+            <h3>Сливочно-лимонное с карамельной присыпкой</h3>
+            <img src="img/ice-creame__2.png" width="267" height="267" alt="">
+            <p>315 ₽<span>/кг</span></p>
+
+            <div class="sundae-card__overlay">
+              <a href="blank.html">Быстрый просмотр</a>
+            </div>
+          </article>
+        </li>
+        <li class="products__item">
+          <article class="sundae-card">
+            <h3>Сливочное с шоколадной стружкой</h3>
+            <img src="img/ice-creame__2.png" width="267" height="267" alt="">
+            <p>320 ₽<span>/кг</span></p>
+
+            <div class="sundae-card__overlay">
+              <a href="blank.html">Быстрый просмотр</a>
+            </div>
+          </article>
+        </li>
+        <li class="products__item">
+          <article class="sundae-card">
+            <h3>Сливочно-ванильное с кусочками шоколада</h3>
+            <img src="img/ice-creame__2.png" width="267" height="267" alt="">
+            <p>440 ₽<span>/кг</span></p>
+
+            <div class="sundae-card__overlay">
+              <a href="blank.html">Быстрый просмотр</a>
+            </div>
+          </article>
+        </li>
+        <li class="products__item">
+          <article class="sundae-card">
+            <h3>Сливочноe с ментоловым сиропом</h3>
+            <img src="img/ice-creame__2.png" width="267" height="267" alt="">
+            <p>435 ₽<span>/кг</span></p>
+
+            <div class="sundae-card__overlay">
+              <a href="blank.html">Быстрый просмотр</a>
+            </div>
+          </article>
+        </li>
+        <li class="products__item">
+          <article class="sundae-card">
+            <h3>Сливочное с кусочками черного шоколада</h3>
+            <img src="img/ice-creame__2.png" width="267" height="267" alt="">
+            <p>355 ₽<span>/кг</span></p>
+
+            <div class="sundae-card__overlay">
+              <a href="blank.html">Быстрый просмотр</a>
+            </div>
+          </article>
+        </li>
+        <li class="products__item">
+          <article class="sundae-card">
+            <h3>Сливочное с мятным сиропом</h3>
+            <img src="img/ice-creame__2.png" width="267" height="267" alt="">
+            <p>420 ₽<span>/кг</span></p>
+
+            <div class="sundae-card__overlay">
+              <a href="blank.html">Быстрый просмотр</a>
+            </div>
+          </article>
+        </li>
+      </ul>
+
+      <div class="pagination">
+        <button class="pagination__btn" disabled></button>
+
+        <ul class="pagination__list">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--active">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="blank.html">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="blank.html">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="blank.html">4</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="blank.html">5</a>
+          </li>
+        </ul>
+
+        <button class="pagination__btn"></button>
+      </div>
+    </section>
 
   </main>
 
