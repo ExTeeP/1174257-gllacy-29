@@ -73,7 +73,7 @@
             .main-nav__right .main-nav__item - для позиционирования внутри этого блока между элементами
           -->
         <div class="main-nav__item main-search">
-          <a class="main-search__link main-nav__link main-nav__link--btn">Поиск</a>
+          <a class="main-nav__link main-nav__link--btn main-search__link">Поиск</a>
           <!--
             main-search__link - для иконки
             main-nav__link - общие стили
@@ -81,24 +81,24 @@
           -->
           <form class="main-nav__dropdown main-search__dropdown-form visually-hidden"
             action="https://echo.htmlacademy.ru" method="get">
-            <input class="main-nav__field main-search__field" name="search" type="search" placeholder="Крем-брюле">
+            <input class="main-input main-search__input" name="search" type="search" placeholder="Крем-брюле">
             <button class="visually-hidden" type="submit">Найти мороженое</button>
           </form>
         </div>
 
         <div class="main-nav__item sing-in">
-          <a class="sing-in__link main-nav__link main-nav__link--btn" href="blank.html">Вход</a>
+          <a class="main-nav__link main-nav__link--btn sing-in__link" href="blank.html">Вход</a>
 
           <form class="main-nav__dropdown sing-in__dropdown-form visually-hidden" action="https://echo.htmlacademy.ru"
             method="get">
             <p class="sing-in__item">
               <label class="visually-hidden" for="login-email">Введите почту</label>
-              <input class="main-nav__field sing-in__field" type="email" name="email" id="login-email"
+              <input class="main-input sing-in__input" type="email" name="email" id="login-email"
                 placeholder="email@example.com">
             </p>
             <p class="sing-in__item">
               <label class="visually-hidden" for="login-pass">Введите пароль</label>
-              <input class="main-nav__field sing-in__field" type="password" name="password" id="login-pass"
+              <input class="main-input sing-in__input" type="password" name="password" id="login-pass"
                 placeholder="......">
             </p>
             <p class="sing-in__item">
@@ -106,13 +106,13 @@
               <a class="sing-in__link sing-in__link--form" href="#">Новая регистрация</a>
             </p>
             <p class="sing-in__item">
-              <button class="sing-in__btn main-btn" type="submit">Войти</button>
+              <button class="main-btn sing-in__btn" type="submit">Войти</button>
             </p>
           </form>
         </div>
 
         <div class="main-nav__item main-cart">
-          <a class="main-cart__link main-nav__link main-nav__link--btn" href="blank.html">Корзина</a>
+          <a class="main-nav__link main-nav__link--btn main-cart__link" href="blank.html">Корзина</a>
 
           <ul class="main-cart__list visually-hidden">
             <li class="main-cart__item">
@@ -120,7 +120,7 @@
             </li>
             <li class="main-cart__item">
               <p class="main-cart__total">Итого : <span id="total-amount">0</span></p>
-              <a class="main-cart__btn main-btn" href="#">Оформить заказ</a>
+              <a class="main-btn main-cart__btn" href="#">Оформить заказ</a>
             </li>
           </ul>
 
@@ -209,32 +209,32 @@
 
       <ul class="bestsellers__list">
         <li class="bestsellers__item">
-          <p><span class="visually-hidden">Хит продаж</span></p>
-          <article class="sundae-card">
+          <p class="visually-hidden">Хит продаж</p>
+          <article class="sundae-card sundae-card--hit">
             <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
             <img src="img/ice-creame__1.png" width="267" height="267" alt="">
             <p>310 ₽<span>/кг</span></p>
           </article>
         </li>
         <li class="bestsellers__item">
-          <p><span class="visually-hidden">Хит продаж</span></p>
-          <article class="sundae-card">
+          <p class="visually-hidden">Хит продаж</p>
+          <article class="sundae-card sundae-card--hit">
             <h3>Сливочно-кофейное с кусочками шоколада</h3>
             <img src="img/ice-creame__2.png" width="267" height="267" alt="">
             <p>380 ₽<span>/кг</span></p>
           </article>
         </li>
         <li class="bestsellers__item">
-          <p><span class="visually-hidden">Хит продаж</span></p>
-          <article class="sundae-card">
+          <p class="visually-hidden">Хит продаж</p>
+          <article class="sundae-card sundae-card--hit">
             <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
             <img src="img/ice-creame__3.png" width="267" height="267" alt="">
             <p>355 ₽<span>/кг</span></p>
           </article>
         </li>
         <li class="bestsellers__item">
-          <p><span class="visually-hidden">Хит продаж</span></p>
-          <article class="sundae-card">
+          <p class="visually-hidden">Хит продаж</p>
+          <article class="sundae-card sundae-card--hit">
             <h3>Сливочное крем-брюле с карамельной подливкой</h3>
             <img src="img/ice-creame__4.png" width="267" height="267" alt="">
             <p>415 ₽<span>/кг</span></p>
@@ -247,22 +247,23 @@
       <h2 class="visually-hidden">Почему выбирают у нас</h2>
 
       <div class="advantages__wrap">
-        <p>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+        <p class="advantages__heading">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного
+          производства на развес</p>
 
-        <ul>
-          <li>
+        <ul class="advantages__list">
+          <li class="advantages__item">
             <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного
               оборудования и проверенных временем технологий.</p>
           </li>
-          <li>
+          <li class="advantages__item">
             <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
               дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
           </li>
-          <li>
+          <li class="advantages__item">
             <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
               связывает долговременное сотрудничество.</p>
           </li>
-          <li>
+          <li class="advantages__item">
             <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
               мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </li>
@@ -271,11 +272,10 @@
     </section>
 
     <div class="container">
-      <section class="blog">
-        <h2 class="visually-hidden">Блог</h2>
+      <section class="new-blog">
+        <h2 class="new-blog__title">Новое в нашем блоге</h2>
 
-        <article class="blog__article">
-          <h3>Новое в нашем блоге</h3>
+        <article class="new-blog__article">
           <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
         </article>
       </section>
@@ -286,10 +286,11 @@
         <div class="mailing__wrapper">
           <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
             Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+
           <form class="mailing__form" action="#" method="POST">
             <label class="visually-hidden" for="mailing-email">Ваша почта</label>
-            <input class="mailing__field" type="email" name="email" id="mailing-email">
-            <button class="mailing__btn main-btn" type="submit">Отправить</button>
+            <input class="main-input mailing__input" type="email" name="email" id="mailing-email">
+            <button class="main-btn mailing__btn" type="submit">Отправить</button>
           </form>
         </div>
       </section>
@@ -310,7 +311,7 @@
           <small>(с 10 до 20 ежедневно)</small>
         </div>
 
-        <button class="contacts__btn main-btn" type="button">Форма обратной связи</button>
+        <button class="main-btn contacts__btn" type="button">Форма обратной связи</button>
       </div>
     </section>
 
@@ -321,31 +322,31 @@
 
       <ul class="main-footer__social">
         <li>
-          <a href="#">Наша соц. сеть в Фейсбук</a>
+          <a href="blank.html" aria-label="Наша соц. сеть в Фейсбук">#</a>
         </li>
         <li>
-          <a href="#">Наша соц. сеть во Вконтакте</a>
+          <a href="blank.html" aria-label="Наша соц. сеть во Вконтакте">#</a>
         </li>
         <li>
-          <a href="#">Наша соц. сеть в Инстаграме</a>
+          <a href="blank.html" aria-label="Наша соц. сеть в Инстаграме">#</a>
         </li>
         <li>
-          <a href="#">Наша соц. сеть в Твиттере</a>
+          <a href="blank.html" aria-label="Наша соц. сеть в Твиттере">#</a>
         </li>
       </ul>
 
       <ul class="main-footer__info">
         <li>
-          <a href="">Для поставщиков</a>
+          <a href="blank.html">Для поставщиков</a>
         </li>
         <li>
-          <a href="#">Наши документы</a>
+          <a href="blank.html">Наши документы</a>
         </li>
         <li>
-          <a href="#">О производстве</a>
+          <a href="blank.html">О производстве</a>
         </li>
         <li>
-          <a href="#">Экологические стандарты</a>
+          <a href="blank.html">Экологические стандарты</a>
         </li>
       </ul>
 
