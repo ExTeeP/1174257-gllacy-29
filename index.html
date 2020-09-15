@@ -15,87 +15,96 @@
         <img src="img/logo-main.svg" width="154" height="64" alt="Логотип Глейси Шоп">
       </a>
 
-      <div class="main-nav__col main-nav__col--left">
+      <ul class="main-nav__list main-nav__list--main">
+        <li class="main-nav__item main-nav__item--dropdown">
+          <a class="main-nav__link main-nav__link--active" href="blank.html">Каталог</a>
 
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="blank.html">Каталог</a>
+          <ul class="main-nav__list main-nav__list--lvl2">
+            <li class="main-nav____item">
+              <a class="main-nav____link" href="blank.html">Новинки</a>
+            </li>
+            <li class="main-nav____item">
+              <a class="main-nav____link" href="inner.html">Сливочное</a>
+            </li>
+            <li class="main-nav____item">
+              <a class="main-nav____link" href="blank.html">Щербеты</a>
+            </li>
+            <li class="main-nav____item">
+              <a class="main-nav____link" href="blank.html">Фруктовый лед</a>
+            </li>
+            <li class="main-nav____item">
+              <a class="main-nav____link" href="blank.html">Мелорин</a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="blank.html">Доставка и оплата</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="blank.html">О компании</a>
+        </li>
+      </ul>
 
-            <ul class="main-nav__dropdown catalog-dropdown">
-              <li class="catalog-dropdown__item">
-                <a class="catalog-dropdown__link catalog-dropdown__link--news" href="blank.html">Новинки</a>
-              </li>
-              <li class="catalog-dropdown__item">
-                <a class="catalog-dropdown__link" href="inner.html">Сливочное</a>
-              </li>
-              <li class="catalog-dropdown__item">
-                <a class="catalog-dropdown__link" href="blank.html">Щербеты</a>
-              </li>
-              <li class="catalog-dropdown__item">
-                <a class="catalog-dropdown__link" href="blank.html">Фруктовый лед</a>
-              </li>
-              <li class="catalog-dropdown__item">
-                <a class="catalog-dropdown__link" href="blank.html">Мелорин</a>
-              </li>
-            </ul>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="blank.html">Доставка и оплата</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="blank.html">О компании</a>
-          </li>
-        </ul>
+      <div class="main-nav__list main-nav__list--user">
 
-      </div>
+        <div class="main-nav__item main-nav__item--dropdown">
+          <a class="main-nav__link main-nav__link--btn">
+            <span class="main-nav__icon" aria-hidden="true">
+              <!-- <svg aria-hidden="true"> -->
+            </span>
+            <span class="visually-hidden">Поиск</span>
+          </a>
 
-      <div class="main-nav__col main-nav__col--right">
-
-        <div class="main-nav__item main-search">
-          <a class="main-nav__link main-nav__link--btn main-search__link">Поиск</a>
-
-          <form class="main-nav__dropdown main-search__dropdown-form visually-hidden"
-            action="https://echo.htmlacademy.ru" method="get">
-            <input class="main-input main-search__input" name="search" type="search" placeholder="Крем-брюле">
-            <button class="visually-hidden" type="submit">Найти мороженое</button>
+          <form class="main-nav__form visually-hidden" action="https://echo.htmlacademy.ru" method="get">
+            <input class="main-nav__input main-input" name="search" type="search" placeholder="Крем-брюле">
+            <button class="visually-hidden" type="submit">Найти</button>
           </form>
         </div>
 
-        <div class="main-nav__item sing-in">
-          <a class="main-nav__link main-nav__link--btn sing-in__link" href="blank.html">Вход</a>
+        <div class="main-nav__item main-nav__item--dropdown">
+          <a class="main-nav__link main-nav__link--btn" href="blank.html">
+            <span class="main-nav__icon" aria-hidden="true">
+              <!-- <svg aria-hidden="true"> -->
+            </span>
+            Вход
+          </a>
 
-          <form class="main-nav__dropdown sing-in__dropdown-form visually-hidden" action="https://echo.htmlacademy.ru"
-            method="post">
-            <p class="sing-in__item">
+          <form class="main-nav__form visually-hidden" action="https://echo.htmlacademy.ru" method="get">
+            <p class="main-nav__form-inner">
               <label class="visually-hidden" for="login-email">Введите почту</label>
-              <input class="main-input sing-in__input" type="email" name="email" id="login-email"
+              <input class="main-nav__input main-input" type="email" name="email" id="login-email"
                 placeholder="email@example.com">
             </p>
-            <p class="sing-in__item">
+            <p class="main-nav__form-inner">
               <label class="visually-hidden" for="login-pass">Введите пароль</label>
-              <input class="main-input sing-in__input" type="password" name="password" id="login-pass"
+              <input class="main-nav__input main-input" type="password" name="password" id="login-pass"
                 placeholder="......">
             </p>
-            <p class="sing-in__item">
-              <a class="sing-in__link sing-in__link--form" href="blank.html">Забыли пароль?</a>
-              <a class="sing-in__link sing-in__link--form" href="blank.html">Новая регистрация</a>
+            <p class="main-nav__form-inner">
+              <a class="main-nav__link main-nav__link--form" href="blank.html">Забыли пароль?</a>
+              <a class="main-nav__link main-nav__link--form" href="blank.html">Новая регистрация</a>
             </p>
-            <p class="sing-in__item">
-              <button class="main-btn sing-in__btn" type="submit">Войти</button>
+            <p class="main-nav__form-inner">
+              <button class="main-btn" type="submit">Войти</button>
             </p>
           </form>
         </div>
 
-        <div class="main-nav__item main-cart">
-          <a class="main-nav__link main-nav__link--btn main-cart__link" href="blank.html">Пусто</a>
+        <div class="main-nav__item main-nav__item--dropdown">
+          <a class="main-nav__link main-nav__link--btn" href="blank.html">
+            <span class="main-nav__icon" aria-hidden="true">
+              <!-- <svg aria-hidden="true"> -->
+            </span>
+            Пусто
+          </a>
 
-          <ul class="main-cart__list visually-hidden">
-            <li class="main-cart__item">
-              <p>В вашей корзине пусто</p>
+          <ul class="main-nav__cart header-cart visually-hidden">
+            <li class="header-cart__item header-cart__item--divider">
+              <p class="header-cart__text">В вашей корзине пусто</p>
             </li>
-            <li class="main-cart__item">
-              <p class="main-cart__total">Итого : <span id="total-amount">0</span></p>
-              <a class="main-btn main-cart__btn" href="blank.html">Оформить заказ</a>
+            <li class="header-cart__item">
+              <p class="header-cart__text header-cart__text--bold">Итого : <span id="total-amount">0</span></p>
+              <a class="main-btn" href="blank.html">Оформить заказ</a>
             </li>
           </ul>
 
@@ -104,7 +113,7 @@
       </div>
     </nav>
 
-    <section class="page-header__dangling working-hours">
+    <section class="page-header__dangling">
       <h2 class="visually-hidden">Время работы магазина</h2>
       <p>с 10 до 20, ежедневно</p>
       <a href="tel:+78124502525">8 812 450-25-25</a>
