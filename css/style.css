@@ -1,12 +1,12 @@
 /*
 _______________________________________________________________________________
-Fonts                                                                          |
+fonts                                                                          |
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 */
 
 @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto'), local('Roboto-Regular'),
+  font-family: 'roboto';
+  src: local('roboto'), local('roboto-regular'),
       url('../fonts/roboto.woff2') format('woff2'),
       url('../fonts/roboto.woff') format('woff');
   font-weight: 400;
@@ -15,8 +15,8 @@ Fonts                                                                          |
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Medium'), local('Roboto-Medium'),
+  font-family: 'roboto';
+  src: local('roboto medium'), local('roboto-medium'),
       url('../fonts/robotomedium.woff2') format('woff2'),
       url('../fonts/robotomedium.woff') format('woff');
   font-weight: 500;
@@ -25,8 +25,8 @@ Fonts                                                                          |
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Bold'), local('Roboto-Bold'),
+  font-family: 'roboto';
+  src: local('roboto bold'), local('roboto-bold'),
       url('../fonts/robotobold.woff2') format('woff2'),
       url('../fonts/robotobold.woff') format('woff');
   font-weight: 700;
@@ -36,21 +36,39 @@ Fonts                                                                          |
 
 /*
 _______________________________________________________________________________
-Variables                                                                      |
+variables                                                                      |
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 */
 
 :root {
+  --page-color__primary: #849d8f;
+  --page-color__secondary: #8996a6;
+  --page-color__tertiary: #9d8b84;
 
+  --color__white: #ffffff;
+  --color__white-02: rgba(255, 255, 255, 0.2);
+  --color__white-05: rgba(255, 255, 255, 0.5);
+  --color__white-08: rgba(255, 255, 255, 0.8);
+  --color__border-03: rgba(50, 50, 50, 0.3);
+
+  --text-color__basic: #323232;
+  --color__svg-hover: #343434;
+  --color__svg-hover-second: #e84d37;
+
+  --button-color__primary: #f26843;
+  --button-color__secondary: #e74a35;
+  --button-gradient: linear-gradient(
+      180deg,
+      var(--button-color__primary) 0%,
+      var(--button-color__secondary) 100%
+    );
 }
 
 /*
 _______________________________________________________________________________
-Global                                                                         |
+global                                                                         |
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 */
-
-
 
 html {
   box-sizing: border-box;
@@ -66,9 +84,11 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  /* font-family: ; */
-  /* color: ; */
-  background-color: #849D8F;
+  font-family: 'roboto', 'arial', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--text-color__basic) ;
+  background-color: var(--page-color__primary);
 }
 
 img {
@@ -90,3 +110,235 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/*
+_______________________________________________________________________________
+button and input adn link                                                      |
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+*/
+
+.main-btn {
+  background-color: #e74a35;
+  background-image: var(--button-gradient);
+  box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+  border-radius: 70px;
+}
+
+.main-input {
+
+}
+
+.main-link {
+
+}
+
+.main-link--black {
+  color: var(--text-color__basic);
+}
+
+/*
+_______________________________________________________________________________
+header                                                                         |
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+*/
+
+.page-header {
+}
+
+.page-header__logo {
+}
+
+.page-header__nav {
+}
+
+.page-header__dangling {
+}
+
+/*
+_______________________________________________________________________________
+navigation                                                                     |
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+*/
+
+.main-nav {
+  font-size: inherit;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__list--lvl2 {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.main-nav__list--lvl2 .main-nav__link {
+  border-bottom: none;
+}
+
+.main-nav__list--main {
+}
+
+.main-nav__list--user {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.main-nav__item {
+}
+
+.main-nav__item--special {
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.main-nav__item--btn {
+}
+
+.main-nav__item--dropdown {
+}
+
+.main-nav__link {
+  display: block;
+  padding: 10px 12px;
+  color: var(--color__white);
+  /* border-bottom: 2px solid var(--color__border-03); */
+}
+
+.main-nav__link--btn {
+  border-bottom: none;
+}
+
+.main-nav__link:focus,
+.main-nav__link:hover {
+  color: var(--text-color__basic);
+  background-color: var(--color__white);
+  border-bottom: none;
+  border-radius: 26px;
+}
+
+.main-nav__link:active {
+  background-color: #ededed;
+  box-shadow: inset 0px 2px 1px #696969;
+}
+
+.main-nav__link:focus {
+  outline: none;
+}
+
+.main-nav__link--current {
+  color: var(--color__white);
+  background: #d07058;
+  border-bottom: none;
+  border-radius: 26px;
+}
+
+.main-nav__link--form {
+}
+
+.main-nav__link--btn {
+  background-color: var(--color__white-02);
+  border-radius: 20px;
+}
+
+.main-nav__link--btn:focus .svg__path-outer,
+.main-nav__link--btn:hover .svg__path-outer {
+  fill: var(--color__svg-hover);
+}
+
+.svg--full-cart .svg__path-inner {
+  fill: var(--color__svg-hover-second);
+}
+
+.main-nav__icon {
+}
+
+.main-nav__form {
+}
+
+.main-nav__form-inner {
+}
+
+.main-nav__input {
+}
+
+.main-nav__cart {
+}
+
+/*
+_______________________________________________________________________________
+dangling                                                                       |
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+*/
+
+.header-dangling {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--color__white);
+}
+
+.header-dangling__link {
+  font-size: 22px;
+  line-height: 24px;
+  color: inherit;
+}
+
+/*
+_______________________________________________________________________________
+main                                                                           |
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+*/
+
+.page-main {
+}
+
+/*
+_______________________________________________________________________________
+slider                                                                         |
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+*/
+
+.slider {}
+.slider__slides {}
+.slider__slide {}
+.slider__title {}
+.slider__picture {}
+.slider__btn {}
+.slider__dots {}
+.slider__dot-item {}
+.slider__dot {}
+
+/*
+_______________________________________________________________________________
+promoution                                                                     |
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+*/
+
+.promo {}
+.promo__list {}
+.promo__item {}
+
+/*  */
+
+.promo-card {}
+.promo-card__title {}
+.promo-card__text {}
+.promo-card__btn {}
+
+/*
+_______________________________________________________________________________
+bestsellers                                                                    |
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+*/
+
+.bestsellers
+.bestsellers__list {}
+.bestsellers__item {}
