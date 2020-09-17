@@ -17,10 +17,10 @@
     <nav class="page-header__nav main-nav">
       <ul class="main-nav__list main-nav__list--main">
         <li class="main-nav__item main-nav__item--dropdown">
-          <a class="main-nav__link main-nav__link--active" href="blank.html">Каталог</a>
+          <a class="main-nav__link" href="blank.html">Каталог</a>
 
-          <ul class="main-nav__list main-nav__list--lvl2">
-            <li class="main-nav__item">
+          <ul class="main-nav__list main-nav__list--lvl2 visually-hidden">
+            <li class="main-nav__item main-nav__item--special">
               <a class="main-nav__link" href="blank.html">Новинки</a>
             </li>
             <li class="main-nav__item">
@@ -47,10 +47,14 @@
 
       <div class="main-nav__list main-nav__list--user">
 
-        <div class="main-nav__item main-nav__item--dropdown">
+        <div class="main-nav__item main-nav__item--btn main-nav__item--dropdown">
           <a class="main-nav__link main-nav__link--btn">
             <span class="main-nav__icon" aria-hidden="true">
-              <!-- <svg aria-hidden="true"> -->
+              <svg class="svg" aria-hidden="true" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="svg__path-outer"
+                  d="M16 14.665l-4.921-4.932a6.144 6.144 0 00-.994-8.273 6.113 6.113 0 00-8.307.352 6.141 6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L14.659 16 16 14.665zm-9.918-4.288a4.245 4.245 0 01-3.928-2.63 4.269 4.269 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936 4.274 4.274 0 01-1.247 3.01 4.256 4.256 0 01-3.003 1.25z"
+                  fill="#fff" />
+              </svg>
             </span>
             <span class="visually-hidden">Поиск</span>
           </a>
@@ -61,10 +65,15 @@
           </form>
         </div>
 
-        <div class="main-nav__item main-nav__item--dropdown">
+        <div class="main-nav__item main-nav__item--btn main-nav__item--dropdown">
           <a class="main-nav__link main-nav__link--btn" href="blank.html">
             <span class="main-nav__icon" aria-hidden="true">
-              <!-- <svg aria-hidden="true"> -->
+              <svg class="svg" aria-hidden="true" width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="svg__path-outer" d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff" />
+                <path class="svg__path-outer"
+                  d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z"
+                  fill="#fff" />
+              </svg>
             </span>
             Вход
           </a>
@@ -81,8 +90,8 @@
                 placeholder="......">
             </p>
             <p class="main-nav__form-inner">
-              <a class="main-nav__link main-nav__link--form" href="blank.html">Забыли пароль?</a>
-              <a class="main-nav__link main-nav__link--form" href="blank.html">Новая регистрация</a>
+              <a class="main-nav__link main-nav__link--black" href="blank.html">Забыли пароль?</a>
+              <a class="main-nav__link main-nav__link--black" href="blank.html">Новая регистрация</a>
             </p>
             <p class="main-nav__form-inner">
               <button class="main-btn" type="submit">Войти</button>
@@ -90,10 +99,15 @@
           </form>
         </div>
 
-        <div class="main-nav__item main-nav__item--dropdown">
+        <div class="main-nav__item main-nav__item--btn main-nav__item--dropdown">
           <a class="main-nav__link main-nav__link--btn" href="blank.html">
             <span class="main-nav__icon" aria-hidden="true">
-              <!-- <svg aria-hidden="true"> -->
+              <svg class="svg" aria-hidden="true" width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="svg__path-outer"
+                  d="M7.034 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2zM16.103 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2zM5.703 2l-.241-2H0v2h3.668l1.511 13h14.108L21 2H5.703zm11.8 11H6.973L5.965 4h12.727l-1.189 9z"
+                  fill="#fff" />
+                <path class="svg__path-inner" d="M5.935 4.03L6.973 13h10.53l1.19-8.97H5.934z" fill="none" />
+              </svg>
             </span>
             Пусто
           </a>
@@ -113,10 +127,10 @@
       </div>
     </nav>
 
-    <section class="page-header__dangling">
+    <section class="page-header__dangling header-dangling">
       <h2 class="visually-hidden">Время работы магазина</h2>
       <p>с 10 до 20, ежедневно</p>
-      <a href="tel:+78124502525">8 812 450-25-25</a>
+      <a class="header-dangling__link" href="tel:+78124502525">8 812 450-25-25</a>
     </section>
   </header>
 
@@ -128,20 +142,20 @@
 
       <ul class="slider__slides" aria-label="Слайды">
         <li class="slider__slide">
-          <h3>Крем-брюле и пломбир с малиновым джемом</h3>
-          <img src="img/double-ice-creame__1.png" width="647" height="584"
+          <h3 class="slider__title">Крем-брюле и пломбир с малиновым джемом</h3>
+          <img class="slider__picture" src="img/double-ice-creame__1.png" width="647" height="584"
             alt="Два аппетитных мороженого в вафельном рожке с разными вкусами">
           <a class="main-btn slider__btn" href="">Давайте оба!</a>
         </li>
         <li class="slider__slide">
-          <h3>Шоколадный пломбир и лимонный сорбет</h3>
-          <img src="img/double-ice-creame__2.png" width="647" height="584"
+          <h3 class="slider__title">Шоколадный пломбир и лимонный сорбет</h3>
+          <img class="slider__picture" src="img/double-ice-creame__2.png" width="647" height="584"
             alt="Два аппетитных мороженого в вафельном рожке с разными вкусами">
           <a class="main-btn slider__btn" href="">Давайте оба!</a>
         </li>
         <li class="slider__slide">
-          <h3>Пломбир с помадкой и клубничный щербет</h3>
-          <img src="img/double-ice-creame__3.png" width="647" height="584"
+          <h3 class="slider__title">Пломбир с помадкой и клубничный щербет</h3>
+          <img class="slider__picture" src="img/double-ice-creame__3.png" width="647" height="584"
             alt="Два аппетитных мороженого в вафельном рожке с разными вкусами">
           <a class="main-btn slider__btn" href="">Давайте оба!</a>
         </li>
@@ -166,18 +180,20 @@
       <ul class="promo__list">
         <li class="promo__item">
           <article class="promo-card">
-            <h3>Малинка даром!</h3>
-            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+            <h3 class="promo-card__title">Малинка даром!</h3>
+            <p class="promo-card__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
+              малинового варенья бесплатно.
             </p>
-            <a class="main-btn" href="blank.html">Хочу варенье!</a>
+            <a class="main-btn promo-card__btn" href="blank.html">Хочу варенье!</a>
           </article>
         </li>
         <li class="promo__item">
           <article class="promo-card">
-            <h3>Шоколадки даром!</h3>
-            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно
+            <h3 class="promo-card__title">Шоколадки даром!</h3>
+            <p class="promo-card__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной
+              присыпки совершенно
               бесплатно.</p>
-            <a class="main-btn" href="blank.html">Хочу варенье!</a>
+            <a class="main-btn promo-card__btn" href="blank.html">Хочу варенье!</a>
           </article>
         </li>
       </ul>
@@ -189,48 +205,48 @@
       <ul class="bestsellers__list">
         <li class="bestsellers__item">
           <p class="visually-hidden">Хит продаж</p>
-          <article class="sundae-card sundae-card--hit">
+          <article class="product-card product-card--hit">
             <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
             <img src="img/ice-creame__1.png" width="267" height="267" alt="">
             <p>310 ₽<span>/кг</span></p>
 
-            <div class="sundae-card__overlay">
+            <div class="product-card__overlay">
               <a href="blank.html">Быстрый просмотр</a>
             </div>
           </article>
         </li>
         <li class="bestsellers__item">
           <p class="visually-hidden">Хит продаж</p>
-          <article class="sundae-card sundae-card--hit">
+          <article class="product-card product-card--hit">
             <h3>Сливочно-кофейное с кусочками шоколада</h3>
             <img src="img/ice-creame__2.png" width="267" height="267" alt="">
             <p>380 ₽<span>/кг</span></p>
 
-            <div class="sundae-card__overlay">
+            <div class="product-card__overlay">
               <a href="blank.html">Быстрый просмотр</a>
             </div>
           </article>
         </li>
         <li class="bestsellers__item">
           <p class="visually-hidden">Хит продаж</p>
-          <article class="sundae-card sundae-card--hit">
+          <article class="product-card product-card--hit">
             <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
             <img src="img/ice-creame__3.png" width="267" height="267" alt="">
             <p>355 ₽<span>/кг</span></p>
 
-            <div class="sundae-card__overlay">
+            <div class="product-card__overlay">
               <a href="blank.html">Быстрый просмотр</a>
             </div>
           </article>
         </li>
         <li class="bestsellers__item">
           <p class="visually-hidden">Хит продаж</p>
-          <article class="sundae-card sundae-card--hit">
+          <article class="product-card product-card--hit">
             <h3>Сливочное крем-брюле с карамельной подливкой</h3>
             <img src="img/ice-creame__4.png" width="267" height="267" alt="">
             <p>415 ₽<span>/кг</span></p>
 
-            <div class="sundae-card__overlay">
+            <div class="product-card__overlay">
               <a href="blank.html">Быстрый просмотр</a>
             </div>
           </article>
