@@ -303,8 +303,7 @@ navigation                                                                     |
   outline: none;
 }
 
-.main-nav__link--current {
-
+.main-nav__link--is-current {
   background: #d07058;
   border-bottom: none;
   border-radius: 26px;
@@ -316,6 +315,17 @@ navigation                                                                     |
 .main-nav__link--btn {
   background-color: var(--color-white-20a);
   border-radius: 20px;
+}
+
+.main-nav__link--full-card {
+  color: var(--color-grey-dark);
+  background-color: var(--color-white);
+  border-bottom: none;
+  border-radius: 26px;
+}
+
+.main-nav__link--full-card .svg__path-outer {
+  fill: var(--color-grey-dark);
 }
 
 .main-nav__link--btn:focus .svg__path-outer,
@@ -780,6 +790,59 @@ breadcrumb                                                                    |
   font-size: 14px;
   line-height: 16px;
 }
+
+.filter__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter__item {}
+
+/*
+_______________________________________________________________________________
+castom-action                                                                  |
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+*/
+
+.custom-action {}
+
+.custom-action--radio {}
+
+.custom-action--checkbox {}
+
+.custom-action {}
+
+.custom-action__input {}
+
+.custom-action__input--radio {}
+
+.custom-action__input--checkbox {}
+
+.custom-action__icon {}
+
+.custom-action__icon--on {
+  display: none;
+}
+
+.custom-action__icon--off {
+}
+
+.custom-action__icon--radio {}
+
+.custom-action__icon--checkbox {}
+
+.custom-action__path-outer {}
+
+.custom-action__path-inner {
+  opacity: 0;
+}
+
+.custom-action__label {}
+
+.custom-action__label--radio {}
+
+.custom-action__label--checkbox {}
 
 /*
 _______________________________________________________________________________

@@ -17,7 +17,7 @@
     <nav class="page-header__nav main-nav">
       <ul class="main-nav__list main-nav__list--main">
         <li class="main-nav__item main-nav__item--dropdown">
-          <a class="main-nav__link main-nav__link--active" href="blank.html">Каталог</a>
+          <a class="main-nav__link" href="blank.html">Каталог</a>
 
           <ul class="main-nav__list main-nav__list--lvl2">
             <li class="main-nav__item">
@@ -47,7 +47,7 @@
 
       <div class="main-nav__list main-nav__list--user">
 
-        <div class="main-nav__item main-nav__item--dropdown">
+        <div class="main-nav__item main-nav__item--btn main-nav__item--dropdown">
           <a class="main-nav__link main-nav__link--btn">
             <span class="main-nav__icon" aria-hidden="true">
               <svg class="svg" aria-hidden="true" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,7 +65,7 @@
           </form>
         </div>
 
-        <div class="main-nav__item main-nav__item--dropdown">
+        <div class="main-nav__item main-nav__item--btn main-nav__item--dropdown">
           <a class="main-nav__link main-nav__link--btn" href="blank.html">
             <span class="main-nav__icon" aria-hidden="true">
               <svg class="svg" aria-hidden="true" width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,16 +90,19 @@
                 placeholder="......">
             </p>
             <p class="main-nav__form-inner">
-              <a class="main-nav__link main-nav__link--form" href="blank.html">Забыли пароль?</a>
-              <a class="main-nav__link main-nav__link--form" href="blank.html">Новая регистрация</a>
+              <a class="main-nav__link main-nav__link--black" href="blank.html">Забыли пароль?</a>
+              <a class="main-nav__link main-nav__link--black" href="blank.html">Новая регистрация</a>
             </p>
             <p class="main-nav__form-inner">
-              <button class="main-btn" type="submit">Войти</button>
+              <button class="main-btn" type="submit">
+                <span class="main-btn__transition"></span>
+                Войти
+              </button>
             </p>
           </form>
         </div>
 
-        <div class="main-nav__item main-nav__item--dropdown">
+        <div class="main-nav__item main-nav__item--btn main-nav__item--dropdown">
           <a class="main-nav__link main-nav__link--btn" href="blank.html">
             <span class="main-nav__icon" aria-hidden="true">
               <svg class="svg" aria-hidden="true" width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -118,7 +121,10 @@
             </li>
             <li class="header-cart__item">
               <p class="header-cart__text header-cart__text--bold">Итого : <span id="total-amount">0</span></p>
-              <a class="main-btn" href="blank.html">Оформить заказ</a>
+              <a class="main-btn" href="blank.html">
+                <span class="main-btn__transition"></span>
+                Оформить заказ
+              </a>
             </li>
           </ul>
 
