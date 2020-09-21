@@ -94,7 +94,10 @@
               <a class="main-nav__link main-nav__link--black" href="blank.html">Новая регистрация</a>
             </p>
             <p class="main-nav__form-inner">
-              <button class="main-btn" type="submit">Войти</button>
+              <button class="main-btn" type="submit">
+                <span class="main-btn__transition"></span>
+                Войти
+              </button>
             </p>
           </form>
         </div>
@@ -118,7 +121,10 @@
             </li>
             <li class="header-cart__item">
               <p class="header-cart__text header-cart__text--bold">Итого : <span id="total-amount">0</span></p>
-              <a class="main-btn" href="blank.html">Оформить заказ</a>
+              <a class="main-btn" href="blank.html">
+                <span class="main-btn__transition"></span>
+                Оформить заказ
+              </a>
             </li>
           </ul>
 
@@ -145,25 +151,34 @@
           <h3 class="slider__title">Крем-брюле и пломбир с малиновым джемом</h3>
           <img class="slider__picture" src="img/double-ice-creame__1.png" width="647" height="584"
             alt="Два аппетитных мороженого в вафельном рожке с разными вкусами">
-          <a class="main-btn slider__btn" href="">Давайте оба!</a>
+          <a class="main-btn main-btn--big slider__btn" href="blank.html">
+            <span class="main-btn__transition"></span>
+            Давайте оба!
+          </a>
         </li>
-        <li class="slider__slide">
+        <li class="slider__slide visually-hidden">
           <h3 class="slider__title">Шоколадный пломбир и лимонный сорбет</h3>
           <img class="slider__picture" src="img/double-ice-creame__2.png" width="647" height="584"
             alt="Два аппетитных мороженого в вафельном рожке с разными вкусами">
-          <a class="main-btn slider__btn" href="">Давайте оба!</a>
+          <a class="main-btn main-btn--big slider__btn" href="blank.html">
+            <span class="main-btn__transition"></span>
+            Давайте оба!
+          </a>
         </li>
-        <li class="slider__slide">
+        <li class="slider__slide visually-hidden">
           <h3 class="slider__title">Пломбир с помадкой и клубничный щербет</h3>
           <img class="slider__picture" src="img/double-ice-creame__3.png" width="647" height="584"
             alt="Два аппетитных мороженого в вафельном рожке с разными вкусами">
-          <a class="main-btn slider__btn" href="">Давайте оба!</a>
+          <a class="main-btn main-btn--big slider__btn" href="blank.html">
+            <span class="main-btn__transition"></span>
+            Давайте оба!
+          </a>
         </li>
       </ul>
 
-      <ul class="slider__dots visually-hidden" aria-label="Навигация по слайдеру">
+      <ul class="slider__dots" aria-label="Навигация по слайдеру">
         <li class="slider__dot-item">
-          <button class="slider__dot" type="button" aria-label="К первому слайду"></button>
+          <button class="slider__dot slider__dot--is-current" type="button" aria-label="К первому слайду"></button>
         </li>
         <li class="slider__dot-item">
           <button class="slider__dot" type="button" aria-label="Ко второму слайду"></button>
@@ -184,7 +199,10 @@
             <p class="promo-card__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
               малинового варенья бесплатно.
             </p>
-            <a class="main-btn promo-card__btn" href="blank.html">Хочу варенье!</a>
+            <a class="main-btn promo-card__btn" href="blank.html">
+              <span class="main-btn__transition"></span>
+              Хочу варенье!
+            </a>
           </article>
         </li>
         <li class="promo__item">
@@ -193,7 +211,10 @@
             <p class="promo-card__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной
               присыпки совершенно
               бесплатно.</p>
-            <a class="main-btn promo-card__btn" href="blank.html">Хочу варенье!</a>
+            <a class="main-btn promo-card__btn" href="blank.html">
+              <span class="main-btn__transition"></span>
+              Хочу варенье!
+            </a>
           </article>
         </li>
       </ul>
@@ -204,50 +225,93 @@
 
       <ul class="bestsellers__list">
         <li class="bestsellers__item">
-          <p class="visually-hidden">Хит продаж</p>
-          <article class="product-card product-card--hit">
-            <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-            <img src="img/ice-creame__1.png" width="267" height="267" alt="">
-            <p>310 ₽<span>/кг</span></p>
+          <article class="product-card product-card--hit-mark">
+            <h3 class="product-card__title">
+              <a class="product-card__link" href="blank.html">
+                Сливочное с апельсиновым джемом и цитрусовой стружкой
+              </a>
+            </h3>
+            <div class="product-card__picture">
+              <img src="img/ice-creame__1.png" width="267" height="267"
+                alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            </div>
+            <p class="product-card__price">
+              310 &#8381;<span class="product-card__price-subscript">/кг</span>
+            </p>
 
             <div class="product-card__overlay">
-              <a href="blank.html">Быстрый просмотр</a>
+              <a class="main-btn" href="blank.html">
+                <span class="main-btn__transition"></span>
+                Быстрый просмотр
+              </a>
             </div>
           </article>
         </li>
         <li class="bestsellers__item">
-          <p class="visually-hidden">Хит продаж</p>
-          <article class="product-card product-card--hit">
-            <h3>Сливочно-кофейное с кусочками шоколада</h3>
-            <img src="img/ice-creame__2.png" width="267" height="267" alt="">
-            <p>380 ₽<span>/кг</span></p>
+          <article class="product-card product-card--hit-mark">
+            <h3 class="product-card__title">
+              <a class="product-card__link" href="blank.html">
+                Сливочно-кофейное с кусочками шоколада
+              </a>
+            </h3>
+            <div class="product-card__picture">
+              <img src="img/ice-creame__2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            </div>
+            <p class="product-card__price">
+              380 &#8381;<span class="product-card__price-subscript">/кг</span>
+            </p>
 
             <div class="product-card__overlay">
-              <a href="blank.html">Быстрый просмотр</a>
+              <a class="main-btn" href="blank.html">
+                <span class="main-btn__transition"></span>
+                Быстрый просмотр
+              </a>
             </div>
           </article>
         </li>
         <li class="bestsellers__item">
-          <p class="visually-hidden">Хит продаж</p>
-          <article class="product-card product-card--hit">
-            <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
-            <img src="img/ice-creame__3.png" width="267" height="267" alt="">
-            <p>355 ₽<span>/кг</span></p>
+          <article class="product-card product-card--hit-mark">
+            <h3 class="product-card__title">
+              <a class="product-card__link" href="blank.html">
+                Сливочно-клубничное с присыпкой из белого шоколада
+              </a>
+            </h3>
+            <div class="product-card__picture">
+              <img src="img/ice-creame__3.png" width="267" height="267"
+                alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            </div>
+            <p class="product-card__price">
+              355 &#8381;<span class="product-card__price-subscript">/кг</span>
+            </p>
 
             <div class="product-card__overlay">
-              <a href="blank.html">Быстрый просмотр</a>
+              <a class="main-btn" href="blank.html">
+                <span class="main-btn__transition"></span>
+                Быстрый просмотр
+              </a>
             </div>
           </article>
         </li>
         <li class="bestsellers__item">
-          <p class="visually-hidden">Хит продаж</p>
-          <article class="product-card product-card--hit">
-            <h3>Сливочное крем-брюле с карамельной подливкой</h3>
-            <img src="img/ice-creame__4.png" width="267" height="267" alt="">
-            <p>415 ₽<span>/кг</span></p>
+          <article class="product-card product-card--hit-mark">
+            <h3 class="product-card__title">
+              <a class="product-card__link" href="blank.html">
+                Сливочное крем-брюле с карамельной подливкой
+              </a>
+            </h3>
+            <div class="product-card__picture">
+              <img src="img/ice-creame__4.png" width="267" height="267"
+                alt="Сливочное крем-брюле с карамельной подливкой">
+            </div>
+            <p class="product-card__price">
+              415 &#8381;<span class="product-card__price-subscript">/кг</span>
+            </p>
 
             <div class="product-card__overlay">
-              <a href="blank.html">Быстрый просмотр</a>
+              <a class="main-btn" href="blank.html">
+                <span class="main-btn__transition"></span>
+                Быстрый просмотр
+              </a>
             </div>
           </article>
         </li>
@@ -261,19 +325,19 @@
         производства на развес</p>
 
       <ul class="advantages__list">
-        <li class="advantages__item">
+        <li class="advantages__item advantages__icon-icecreame">
           <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного
             оборудования и проверенных временем технологий.</p>
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__icon-leaf">
           <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
             дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__icon-cow">
           <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
             связывает долговременное сотрудничество.</p>
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__icon-thermometer">
           <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
             мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
         </li>
@@ -292,25 +356,30 @@
       </section>
 
       <section class="mailing">
-        <h2 class="visually-hidden">Еженедельная рассылка</h2>
+        <div class="mailing__inner">
+          <h2 class="visually-hidden">Еженедельная рассылка</h2>
 
-        <p class="mailing__heading">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного,
-          что у нас происходит.
-          Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <p class="mailing__heading">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого
+            вкусного,
+            что у нас происходит.
+            Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 
-        <form class="mailing__form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="mailing-email">Ваша почта:</label>
-          <input class="mailing__input main-input" type="email" name="mailing-email" id="mailing-email"
-            placeholder="email@example.com">
-          <button class="main-btn mailing__btn" type="submit">Отправить</button>
-        </form>
+          <form class="mailing__form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="mailing-email">Ваша почта:</label>
+            <input class="mailing__input main-input" type="email" name="mailing-email" id="mailing-email"
+              placeholder="email@example.com">
+            <button class="main-btn mailing__btn" type="submit">
+              <span class="main-btn__transition"></span>
+              Отправить
+            </button>
+          </form>
+        </div>
       </section>
     </div>
 
     <section class="contacts">
-      <h2 class="visually-hidden">Где нас искать?</h2>
-
       <div class="contacts__breakout">
+        <h2 class="visually-hidden">Где нас искать?</h2>
         <address class="contacts__addr">
           <div class="contacts__inner">
             <p>Адрес главного офиса и офлайн-магазина:</p>
@@ -323,7 +392,10 @@
           </div>
         </address>
 
-        <button class="main-btn contacts__btn" type="button">Форма обратной связи</button>
+        <button class="main-btn contacts__btn" type="button">
+          <span class="main-btn__transition"></span>
+          Форма обратной связи
+        </button>
       </div>
 
       <div class="contacts__spread">
@@ -343,16 +415,45 @@
 
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__btn" href="blank.html" aria-label="Фейсбук">#</a>
+          <a class="social__btn" href="blank.html" aria-label="Фейсбук">
+            <svg class="svg" aria-hidden="true" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16 0a16 16 0 100 32 16 16 0 000-32zm4.06 9.45H17v3.45h3v3.44h-3V25h-3v-8.66h-3V12.9h3V9.45A3.25 3.25 0 0117 6h3v3.45h.06z"
+                fill="#fff" fill-opacity=".8" />
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__btn" href="blank.html" aria-label="Вконтакте">#</a>
+          <a class="social__btn" href="blank.html" aria-label="Вконтакте">
+            <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.64 14.49c.325 0 .648-.06.95-.18a1.2 1.2 0 00.64-.56 2 2 0 00.15-.8 1.55 1.55 0 00-.18-.7 1.05 1.05 0 00-.61-.51 3 3 0 00-1-.17h-2v3h.57c.59-.05 1.08-.06 1.48-.08zM18.12 17.08A4.851 4.851 0 0017 17h-2.39v3.5h2.45a3.23 3.23 0 001.21-.25c.321-.11.593-.33.77-.62a1.9 1.9 0 00.22-.9 1.76 1.76 0 00-.26-1 1.6 1.6 0 00-.88-.65z"
+                fill="#fff" fill-opacity=".8" />
+              <path
+                d="M16 0a16 16 0 100 32 16 16 0 000-32zm6.6 20.53a3.7 3.7 0 01-1.12 1.33 5.17 5.17 0 01-1.83.88 9.76 9.76 0 01-2.51.27H11V9h5.45a20.61 20.61 0 012.48.11 5.25 5.25 0 011.56.5 2.75 2.75 0 011.19 1.09c.265.473.4 1.008.39 1.55a3.08 3.08 0 01-.54 1.8 3.46 3.46 0 01-1.53 1.2v.07a4 4 0 012.18 1.13 3.2 3.2 0 01.8 2.26 3.841 3.841 0 01-.38 1.82z"
+                fill="#fff" fill-opacity=".8" /></svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__btn" href="blank.html" aria-label="Инстаграме">#</a>
+          <a class="social__btn" href="blank.html" aria-label="Инстаграме">
+            <svg class="svg" aria-hidden="true" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity=".8" fill="#fff">
+                <path
+                  d="M20.92 16A4.96 4.96 0 1111 16c.001-.384.048-.767.14-1.14h-.9v6.84h11.4v-6.84h-.9c.1.373.161.755.18 1.14z" />
+                <path d="M16 18.66A2.66 2.66 0 1013.32 16 2.67 2.67 0 0016 18.66zM21.68 10.3h-3.04v3.04h3.04V10.3z" />
+                <path
+                  d="M16 0a16 16 0 100 32 16 16 0 000-32zm8 21.7a2.28 2.28 0 01-2.32 2.3h-11.4A2.29 2.29 0 018 21.7V10.3A2.29 2.29 0 0110.28 8h11.39A2.29 2.29 0 0124 10.3v11.4z" />
+              </g>
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__btn" href="blank.html" aria-label="Твиттере">#</a>
+          <a class="social__btn" href="blank.html" aria-label="Твиттере">
+            <svg class="svg" aria-hidden="true" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16 0a16 16 0 100 32 16 16 0 000-32zm7.94 12.81c-.25 6.52-3.46 10.83-11 10.7h-.48c-.45 0-4.55-.44-5.35-1.82a7.32 7.32 0 005.12-1.14c-1.05-.29-2.92-.46-3.25-2.85a2.31 2.31 0 001.3.12C9 17 7.53 16.3 7.61 14.17c.418.32.935.482 1.46.46-.77-.23-2.15-3.24-1-4.78 2 1.79 4.07 3.48 7.8 3.64.23-2.21 1.24-3.7 3.17-4.32A3.61 3.61 0 0123 10.31c.74-.23 1.45-.47 2.19-.69a2.21 2.21 0 01-.93 1.71 1.77 1.77 0 001.42-.47 2.9 2.9 0 01-1.74 1.95z"
+                fill="#fff" fill-opacity=".8" /></svg>
+          </a>
         </li>
       </ul>
     </section>
@@ -361,7 +462,7 @@
       <h2 class="visually-hidden">Дополнительная информация</h2>
 
       <ul class="information__list">
-        <li class="information__item">
+        <li class="information__item information__item--special">
           <a class="information__link" href="blank.html">Для поставщиков</a>
         </li>
         <li class="information__item">
@@ -386,7 +487,7 @@
 
   </footer>
 
-  <section class="feedback">
+  <section class="feedback visually-hidden">
     <h2 class="visually-hidden">Форма обратной связи</h2>
 
     <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
@@ -412,7 +513,9 @@
         </ul>
       </fieldset>
 
-      <button class="main-btn feedback__btn" type="submit"></button>
+      <button class="main-btn feedback__btn" type="submit">
+        <span class="main-btn__transition"></span>
+      </button>
     </form>
   </section>
 </body>

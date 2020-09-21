@@ -17,7 +17,7 @@
     <nav class="page-header__nav main-nav">
       <ul class="main-nav__list main-nav__list--main">
         <li class="main-nav__item main-nav__item--dropdown">
-          <a class="main-nav__link main-nav__link--current" href="blank.html">Каталог</a>
+          <a class="main-nav__link main-nav__link--is-current" href="blank.html">Каталог</a>
 
           <ul class="main-nav__list main-nav__list--lvl2">
             <li class="main-nav__item">
@@ -174,7 +174,7 @@
           <a class="breadcrumb__link" href="blank.html">Каталог</a>
         </li>
         <li class="breadcrumb__item">
-          <a class="breadcrumb__link breadcrumb__link--active" aria-current="location">Сливочное</a>
+          <a class="breadcrumb__link breadcrumb__link--is-current" aria-current="location">Сливочное</a>
         </li>
       </ol>
 
@@ -186,7 +186,7 @@
       <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
 
         <fieldset class="filter__fieldset">
-          <legend class="filter__title">Сортировка</legend>
+          <legend class="filter__heading">Сортировка</legend>
 
           <select name="sort">
             <option value="hit" selected>по популярности</option>
@@ -197,7 +197,7 @@
         </fieldset>
 
         <fieldset class="filter__fieldset">
-          <legend class="filter__title">Цена: <span>100</span> ₽ – <span>500</span> ₽</legend>
+          <legend class="filter__heading">Цена: <span>100</span> &#8381; – <span>500</span> &#8381;</legend>
 
           <div class="filter-range">
             <div class="filter-range__scale">
@@ -210,7 +210,7 @@
         </fieldset>
 
         <fieldset class="filter__fieldset">
-          <legend class="filter__title">Жирность:</legend>
+          <legend class="filter__heading">Жирность:</legend>
 
           <ul class="filter__list">
             <li class="filter__item">
@@ -269,7 +269,7 @@
         </fieldset>
 
         <fieldset class="filter__fieldset">
-          <legend class="filter__title">Наполнители:</legend>
+          <legend class="filter__heading">Наполнители:</legend>
 
           <ul class="filter__list">
             <li class="filter__item">
@@ -361,134 +361,270 @@
 
       <ul class="products__list">
         <li class="products__item">
-          <article class="sundae-card">
-            <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-            <img src="img/ice-creame__1.png" width="267" height="267" alt="">
-            <p>310 ₽<span>/кг</span></p>
+          <article class="product-card">
+            <h3 class="product-card__title">
+              <a class="product-card__link" href="blank.html">
+                Сливочное с апельсиновым джемом и цитрусовой стружкой
+              </a>
+            </h3>
+            <div class="product-card__picture">
+              <img src="img/ice-creame__1.png" width="267" height="267"
+                alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            </div>
+            <p class="product-card__price">
+              310 &#8381;<span class="product-card__price-subscript">/кг</span>
+            </p>
 
-            <div class="sundae-card__overlay">
-              <a href="blank.html">Быстрый просмотр</a>
+            <div class="product-card__overlay">
+              <a class="main-btn" href="blank.html">
+                <span class="main-btn__transition"></span>
+                Быстрый просмотр
+              </a>
             </div>
           </article>
         </li>
         <li class="products__item">
-          <article class="sundae-card">
-            <h3>Сливочно-кофейное с кусочками шоколада</h3>
-            <img src="img/ice-creame__2.png" width="267" height="267" alt="">
-            <p>380 ₽<span>/кг</span></p>
+          <article class="product-card">
+            <h3 class="product-card__title">
+              <a class="product-card__link" href="blank.html">
+                Сливочно-кофейное с кусочками шоколада
+              </a>
+            </h3>
+            <div class="product-card__picture">
+              <img src="img/ice-creame__2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            </div>
+            <p class="product-card__price">
+              380 &#8381;<span class="product-card__price-subscript">/кг</span>
+            </p>
 
-            <div class="sundae-card__overlay">
-              <a href="blank.html">Быстрый просмотр</a>
+            <div class="product-card__overlay">
+              <a class="main-btn" href="blank.html">
+                <span class="main-btn__transition"></span>
+                Быстрый просмотр
+              </a>
             </div>
           </article>
         </li>
         <li class="products__item">
-          <article class="sundae-card">
-            <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
-            <img src="img/ice-creame__3.png" width="267" height="267" alt="">
-            <p>355 ₽<span>/кг</span></p>
+          <article class="product-card">
+            <h3 class="product-card__title">
+              <a class="product-card__link" href="blank.html">
+                Сливочно-клубничное с присыпкой из белого шоколада
+              </a>
+            </h3>
+            <div class="product-card__picture">
+              <img src="img/ice-creame__3.png" width="267" height="267"
+                alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            </div>
+            <p class="product-card__price">
+              355 &#8381;<span class="product-card__price-subscript">/кг</span>
+            </p>
 
-            <div class="sundae-card__overlay">
-              <a href="blank.html">Быстрый просмотр</a>
+            <div class="product-card__overlay">
+              <a class="main-btn" href="blank.html">
+                <span class="main-btn__transition"></span>
+                Быстрый просмотр
+              </a>
             </div>
           </article>
         </li>
         <li class="products__item">
-          <article class="sundae-card">
-            <h3>Сливочное крем-брюле с карамельной подливкой</h3>
-            <img src="img/ice-creame__4.png" width="267" height="267" alt="">
-            <p>415 ₽<span>/кг</span></p>
+          <article class="product-card">
+            <h3 class="product-card__title">
+              <a class="product-card__link" href="blank.html">
+                Сливочное крем-брюле с карамельной подливкой
+              </a>
+            </h3>
+            <div class="product-card__picture">
+              <img src="img/ice-creame__4.png" width="267" height="267"
+                alt="Сливочное крем-брюле с карамельной подливкой">
+            </div>
+            <p class="product-card__price">
+              415 &#8381;<span class="product-card__price-subscript">/кг</span>
+            </p>
 
-            <div class="sundae-card__overlay">
-              <a href="blank.html">Быстрый просмотр</a>
+            <div class="product-card__overlay">
+              <a class="main-btn" href="blank.html">
+                <span class="main-btn__transition"></span>
+                Быстрый просмотр
+              </a>
             </div>
           </article>
         </li>
         <li class="products__item">
-          <article class="sundae-card">
-            <h3>Сливочное с брусничным джемом</h3>
-            <img src="img/ice-creame__5.png" width="267" height="267" alt="">
-            <p>325 ₽<span>/кг</span></p>
+          <article class="product-card">
+            <h3 class="product-card__title">
+              <a class="product-card__link" href="blank.html">
+                Сливочное с брусничным джемом
+              </a>
+            </h3>
+            <div class="product-card__picture">
+              <img src="img/ice-creame__5.png" width="267" height="267" alt="Сливочное с брусничным джемом">
+            </div>
+            <p class="product-card__price">
+              325 &#8381;<span class="product-card__price-subscript">/кг</span>
+            </p>
 
-            <div class="sundae-card__overlay">
-              <a href="blank.html">Быстрый просмотр</a>
+            <div class="product-card__overlay">
+              <a class="main-btn" href="blank.html">
+                <span class="main-btn__transition"></span>
+                Быстрый просмотр
+              </a>
             </div>
           </article>
         </li>
         <li class="products__item">
-          <article class="sundae-card">
-            <h3>Сливочно-черничное с цельными ягодами черники</h3>
-            <img src="img/ice-creame__6.png" width="267" height="267" alt="">
-            <p>410 ₽<span>/кг</span></p>
+          <article class="product-card">
+            <h3 class="product-card__title">
+              <a class="product-card__link" href="blank.html">
+                Сливочно-черничное с цельными ягодами черники
+              </a>
+            </h3>
+            <div class="product-card__picture">
+              <img src="img/ice-creame__6.png" width="267" height="267"
+                alt="Сливочно-черничное с цельными ягодами черники">
+            </div>
+            <p class="product-card__price">
+              410 &#8381;<span class="product-card__price-subscript">/кг</span>
+            </p>
 
-            <div class="sundae-card__overlay">
-              <a href="blank.html">Быстрый просмотр</a>
+            <div class="product-card__overlay">
+              <a class="main-btn" href="blank.html">
+                <span class="main-btn__transition"></span>
+                Быстрый просмотр
+              </a>
             </div>
           </article>
         </li>
         <li class="products__item">
-          <article class="sundae-card">
-            <h3>Сливочно-лимонное с карамельной присыпкой</h3>
-            <img src="img/ice-creame__7.png" width="267" height="267" alt="">
-            <p>315 ₽<span>/кг</span></p>
+          <article class="product-card">
+            <h3 class="product-card__title">
+              <a class="product-card__link" href="blank.html">
+                Сливочно-лимонное с карамельной присыпкой
+              </a>
+            </h3>
+            <div class="product-card__picture">
+              <img src="img/ice-creame__7.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
+            </div>
+            <p class="product-card__price">
+              315 &#8381;<span class="product-card__price-subscript">/кг</span>
+            </p>
 
-            <div class="sundae-card__overlay">
-              <a href="blank.html">Быстрый просмотр</a>
+            <div class="product-card__overlay">
+              <a class="main-btn" href="blank.html">
+                <span class="main-btn__transition"></span>
+                Быстрый просмотр
+              </a>
             </div>
           </article>
         </li>
         <li class="products__item">
-          <article class="sundae-card">
-            <h3>Сливочное с шоколадной стружкой</h3>
-            <img src="img/ice-creame__8.png" width="267" height="267" alt="">
-            <p>320 ₽<span>/кг</span></p>
+          <article class="product-card">
+            <h3 class="product-card__title">
+              <a class="product-card__link" href="blank.html">
+                Сливочное с шоколадной стружкой
+              </a>
+            </h3>
+            <div class="product-card__picture">
+              <img src="img/ice-creame__8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
+            </div>
+            <p class="product-card__price">
+              320 &#8381;<span class="product-card__price-subscript">/кг</span>
+            </p>
 
-            <div class="sundae-card__overlay">
-              <a href="blank.html">Быстрый просмотр</a>
+            <div class="product-card__overlay">
+              <a class="main-btn" href="blank.html">
+                <span class="main-btn__transition"></span>
+                Быстрый просмотр
+              </a>
             </div>
           </article>
         </li>
         <li class="products__item">
-          <article class="sundae-card">
-            <h3>Сливочно-ванильное с кусочками шоколада</h3>
-            <img src="img/ice-creame__9.png" width="267" height="267" alt="">
-            <p>440 ₽<span>/кг</span></p>
+          <article class="product-card">
+            <h3 class="product-card__title">
+              <a class="product-card__link" href="blank.html">
+                Сливочно-ванильное с кусочками шоколада
+              </a>
+            </h3>
+            <div class="product-card__picture">
+              <img src="img/ice-creame__9.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
+            </div>
+            <p class="product-card__price">
+              440 &#8381;<span class="product-card__price-subscript">/кг</span>
+            </p>
 
-            <div class="sundae-card__overlay">
-              <a href="blank.html">Быстрый просмотр</a>
+            <div class="product-card__overlay">
+              <a class="main-btn" href="blank.html">
+                <span class="main-btn__transition"></span>
+                Быстрый просмотр
+              </a>
             </div>
           </article>
         </li>
         <li class="products__item">
-          <article class="sundae-card">
-            <h3>Сливочноe с ментоловым сиропом</h3>
-            <img src="img/ice-creame__10.png" width="267" height="267" alt="">
-            <p>435 ₽<span>/кг</span></p>
+          <article class="product-card">
+            <h3 class="product-card__title">
+              <a class="product-card__link" href="blank.html">
+                Сливочноe с ментоловым сиропом
+              </a>
+            </h3>
+            <div class="product-card__picture">
+              <img src="img/ice-creame__10.png" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
+            </div>
+            <p class="product-card__price">
+              435 &#8381;<span class="product-card__price-subscript">/кг</span>
+            </p>
 
-            <div class="sundae-card__overlay">
-              <a href="blank.html">Быстрый просмотр</a>
+            <div class="product-card__overlay">
+              <a class="main-btn" href="blank.html">
+                <span class="main-btn__transition"></span>
+                Быстрый просмотр
+              </a>
             </div>
           </article>
         </li>
         <li class="products__item">
-          <article class="sundae-card">
-            <h3>Сливочное с кусочками черного шоколада</h3>
-            <img src="img/ice-creame__11.png" width="267" height="267" alt="">
-            <p>355 ₽<span>/кг</span></p>
+          <article class="product-card">
+            <h3 class="product-card__title">
+              <a class="product-card__link" href="blank.html">
+                Сливочное с кусочками черного шоколада
+              </a>
+            </h3>
+            <div class="product-card__picture">
+              <img src="img/ice-creame__11.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
+            </div>
+            <p class="product-card__price">
+              355 &#8381;<span class="product-card__price-subscript">/кг</span>
+            </p>
 
-            <div class="sundae-card__overlay">
-              <a href="blank.html">Быстрый просмотр</a>
+            <div class="product-card__overlay">
+              <a class="main-btn" href="blank.html">
+                <span class="main-btn__transition"></span>
+                Быстрый просмотр
+              </a>
             </div>
           </article>
         </li>
         <li class="products__item">
-          <article class="sundae-card">
-            <h3>Сливочное с мятным сиропом</h3>
-            <img src="img/ice-creame__12.png" width="267" height="267" alt="">
-            <p>420 ₽<span>/кг</span></p>
+          <article class="product-card">
+            <h3 class="product-card__title">
+              <a class="product-card__link" href="blank.html">
+                Сливочное с мятным сиропом
+              </a>
+            </h3>
+            <div class="product-card__picture">
+              <img src="img/ice-creame__12.png" width="267" height="267" alt="Сливочное с мятным сиропом">
+            </div>
+            <p class="product-card__price">
+              420 &#8381;<span class="product-card__price-subscript">/кг</span>
+            </p>
 
-            <div class="sundae-card__overlay">
-              <a href="blank.html">Быстрый просмотр</a>
+            <div class="product-card__overlay">
+              <a class="main-btn" href="blank.html">
+                <span class="main-btn__transition"></span>
+                Быстрый просмотр
+              </a>
             </div>
           </article>
         </li>
@@ -499,7 +635,7 @@
 
         <ol class="pagination__list">
           <li class="pagination__item">
-            <a class="pagination__link pagination__link--active" aria-current="location">1</a>
+            <a class="pagination__link pagination__link--is-current" aria-current="location">1</a>
           </li>
           <li class="pagination__item">
             <a class="pagination__link" href="blank.html">2</a>
@@ -528,16 +664,45 @@
 
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__btn" href="blank.html" aria-label="Фейсбук">#</a>
+          <a class="social__btn" href="blank.html" aria-label="Фейсбук">
+            <svg class="svg" aria-hidden="true" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16 0a16 16 0 100 32 16 16 0 000-32zm4.06 9.45H17v3.45h3v3.44h-3V25h-3v-8.66h-3V12.9h3V9.45A3.25 3.25 0 0117 6h3v3.45h.06z"
+                fill="#fff" fill-opacity=".8" />
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__btn" href="blank.html" aria-label="Вконтакте">#</a>
+          <a class="social__btn" href="blank.html" aria-label="Вконтакте">
+            <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.64 14.49c.325 0 .648-.06.95-.18a1.2 1.2 0 00.64-.56 2 2 0 00.15-.8 1.55 1.55 0 00-.18-.7 1.05 1.05 0 00-.61-.51 3 3 0 00-1-.17h-2v3h.57c.59-.05 1.08-.06 1.48-.08zM18.12 17.08A4.851 4.851 0 0017 17h-2.39v3.5h2.45a3.23 3.23 0 001.21-.25c.321-.11.593-.33.77-.62a1.9 1.9 0 00.22-.9 1.76 1.76 0 00-.26-1 1.6 1.6 0 00-.88-.65z"
+                fill="#fff" fill-opacity=".8" />
+              <path
+                d="M16 0a16 16 0 100 32 16 16 0 000-32zm6.6 20.53a3.7 3.7 0 01-1.12 1.33 5.17 5.17 0 01-1.83.88 9.76 9.76 0 01-2.51.27H11V9h5.45a20.61 20.61 0 012.48.11 5.25 5.25 0 011.56.5 2.75 2.75 0 011.19 1.09c.265.473.4 1.008.39 1.55a3.08 3.08 0 01-.54 1.8 3.46 3.46 0 01-1.53 1.2v.07a4 4 0 012.18 1.13 3.2 3.2 0 01.8 2.26 3.841 3.841 0 01-.38 1.82z"
+                fill="#fff" fill-opacity=".8" /></svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__btn" href="blank.html" aria-label="Инстаграме">#</a>
+          <a class="social__btn" href="blank.html" aria-label="Инстаграме">
+            <svg class="svg" aria-hidden="true" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity=".8" fill="#fff">
+                <path
+                  d="M20.92 16A4.96 4.96 0 1111 16c.001-.384.048-.767.14-1.14h-.9v6.84h11.4v-6.84h-.9c.1.373.161.755.18 1.14z" />
+                <path d="M16 18.66A2.66 2.66 0 1013.32 16 2.67 2.67 0 0016 18.66zM21.68 10.3h-3.04v3.04h3.04V10.3z" />
+                <path
+                  d="M16 0a16 16 0 100 32 16 16 0 000-32zm8 21.7a2.28 2.28 0 01-2.32 2.3h-11.4A2.29 2.29 0 018 21.7V10.3A2.29 2.29 0 0110.28 8h11.39A2.29 2.29 0 0124 10.3v11.4z" />
+              </g>
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__btn" href="blank.html" aria-label="Твиттере">#</a>
+          <a class="social__btn" href="blank.html" aria-label="Твиттере">
+            <svg class="svg" aria-hidden="true" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16 0a16 16 0 100 32 16 16 0 000-32zm7.94 12.81c-.25 6.52-3.46 10.83-11 10.7h-.48c-.45 0-4.55-.44-5.35-1.82a7.32 7.32 0 005.12-1.14c-1.05-.29-2.92-.46-3.25-2.85a2.31 2.31 0 001.3.12C9 17 7.53 16.3 7.61 14.17c.418.32.935.482 1.46.46-.77-.23-2.15-3.24-1-4.78 2 1.79 4.07 3.48 7.8 3.64.23-2.21 1.24-3.7 3.17-4.32A3.61 3.61 0 0123 10.31c.74-.23 1.45-.47 2.19-.69a2.21 2.21 0 01-.93 1.71 1.77 1.77 0 001.42-.47 2.9 2.9 0 01-1.74 1.95z"
+                fill="#fff" fill-opacity=".8" /></svg>
+          </a>
         </li>
       </ul>
     </section>
@@ -546,7 +711,7 @@
       <h2 class="visually-hidden">Дополнительная информация</h2>
 
       <ul class="information__list">
-        <li class="information__item">
+        <li class="information__item information__item--special">
           <a class="information__link" href="blank.html">Для поставщиков</a>
         </li>
         <li class="information__item">
