@@ -53,8 +53,8 @@ variables                                                                      |
 
   --color-black-03a: rgba(50, 50, 50, 0.3);
 
-  --color-grey-lightes: #F8F7F4;
-  --color-grey-medium: #5A5A5A;
+  --color-grey-lightes: #f8f7f4;
+  --color-grey-medium: #5a5a5a;
   --color-grey-dark: #323232;
 
   --color-orange-light: #f26843;
@@ -180,7 +180,7 @@ button and input adn link                                                      |
 }
 
 .main-btn:active {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, #f26843 0%, #e74a35 100%);
   box-shadow: inset 0px 2px 2px #942718;
 }
 
@@ -242,17 +242,18 @@ navigation                                                                     |
   list-style: none;
 }
 
+.main-nav__list--main {
+}
+
+.main-nav__list--main .main-nav__link:active {
+  background-color: #ededed;
+  box-shadow: inset 0px 2px 1px #696969;
+}
+
 .main-nav__list--lvl2 {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
-}
-
-.main-nav__list--lvl2 .main-nav__link {
-  border-bottom: none;
-}
-
-.main-nav__list--main {
 }
 
 .main-nav__list--user {
@@ -294,11 +295,6 @@ navigation                                                                     |
   border-radius: 26px;
 }
 
-.main-nav__link:active {
-  background-color: #ededed;
-  box-shadow: inset 0px 2px 1px #696969;
-}
-
 .main-nav__link:focus {
   outline: none;
 }
@@ -322,6 +318,21 @@ navigation                                                                     |
   background-color: var(--color-white);
   border-bottom: none;
   border-radius: 26px;
+}
+
+.main-nav__list--lvl2 .main-nav__link {
+  border-bottom: none;
+  border-radius: 0;
+}
+
+.main-nav__list--lvl2 .main-nav__link:focus,
+.main-nav__list--lvl2 .main-nav__link:hover {
+  background-color: #fbded7;
+}
+
+.main-nav__list--lvl2 .main-nav__link:active {
+  background-color: #f6b5a5;
+  box-shadow: none;
 }
 
 .main-nav__link--full-card .svg__path-outer {
