@@ -6,22 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог сливочного мороженого</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/grid.css">
 </head>
 
-<body class="page-body">
-  <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img src="img/logo-main.svg" width="154" height="64" alt="Логотип Глейси Шоп">
-    </a>
+<body class="lg">
+  <header class="lg-header header container">
 
-    <nav class="page-header__nav main-nav">
+    <nav class="lg-header__nav main-nav">
+      <a class="main-nav__logo" href="index.html">
+        <img src="img/logo-main.svg" width="154" height="64" alt="Логотип Глейси Шоп">
+      </a>
+
       <ul class="main-nav__list main-nav__list--main">
         <li class="main-nav__item main-nav__item--dropdown">
           <a class="main-nav__link main-nav__link--is-current" href="blank.html">Каталог</a>
 
           <ul class="main-nav__list main-nav__list--lvl2">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__item--special" href="blank.html">Новинки</a>
+            <li class=" main-nav__item main-nav__item--special">
+              <a class="main-nav__link" href="blank.html">Новинки</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--is-current">Сливочное</a>
@@ -30,7 +32,7 @@
               <a class="main-nav__link" href="blank.html">Щербеты</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="blank.html">Фруктовый лед</a>
+              <a class="main-nav__link" href="blank.html">Фруктовый&nbsp;лед</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="blank.html">Мелорин</a>
@@ -48,7 +50,7 @@
       <div class="main-nav__list main-nav__list--user">
 
         <div class="main-nav__item main-nav__item--btn main-nav__item--dropdown">
-          <a class="main-nav__link main-nav__link--btn">
+          <a class="main-nav__btn">
             <span class="main-nav__icon" aria-hidden="true">
               <svg class="svg" aria-hidden="true" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="svg__path-outer"
@@ -66,7 +68,7 @@
         </div>
 
         <div class="main-nav__item main-nav__item--btn main-nav__item--dropdown">
-          <a class="main-nav__link main-nav__link--btn" href="blank.html">
+          <a class="main-nav__btn main-nav__btn--p016px" href="blank.html">
             <span class="main-nav__icon" aria-hidden="true">
               <svg class="svg" aria-hidden="true" width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="svg__path-outer" d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff" />
@@ -102,65 +104,65 @@
           </form>
         </div>
 
-        <div class="main-nav__item main-nav__item--dropdown">
-          <div class="main-nav__item main-nav__item--btn main-nav__item--dropdown">
-            <a class="main-nav__link main-nav__link--btn main-nav__link--full-card" href="blank.html">
-              <span class="main-nav__icon" aria-hidden="true">
-                <svg class="svg svg--full-cart" aria-hidden="true" width="21" height="20" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path class="svg__path-outer"
-                    d="M7.034 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2zM16.103 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2zM5.703 2l-.241-2H0v2h3.668l1.511 13h14.108L21 2H5.703zm11.8 11H6.973L5.965 4h12.727l-1.189 9z"
-                    fill="#fff" />
-                  <path class="svg__path-inner" d="M5.935 4.03L6.973 13h10.53l1.19-8.97H5.934z" fill="none" />
-                </svg>
-              </span>
-              2 товара
-            </a>
+        <div class="main-nav__item main-nav__item--btn main-nav__item--dropdown">
+          <a class="main-nav__btn main-nav__btn--p016px main-nav__btn--active" href="blank.html">
+            <span class="main-nav__icon" aria-hidden="true">
+              <svg class="svg svg--full-cart" aria-hidden="true" width="21" height="20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="svg__path-outer"
+                  d="M7.034 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2zM16.103 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2zM5.703 2l-.241-2H0v2h3.668l1.511 13h14.108L21 2H5.703zm11.8 11H6.973L5.965 4h12.727l-1.189 9z"
+                  fill="#fff" />
+                <path class="svg__path-inner" d="M5.935 4.03L6.973 13h10.53l1.19-8.97H5.934z" fill="none" />
+              </svg>
+            </span>
+            2 товара
+          </a>
 
-            <ul class="main-nav__cart header-cart visually-hidden">
-              <li class="header-cart__item header-cart__item--divider">
-                <table class="header-cart__table cart-table">
-                  <thead class="cart-table__head visually-hidden">
-                    <tr>
-                      <td>Изображение товара</td>
-                      <td>Название товара</td>
-                      <td>Колличество и сумма за кг</td>
-                      <td>Сумма в целом</td>
-                      <td>Удалить из корзины</td>
-                    </tr>
-                  </thead>
-                  <tbody class="cart-table__body">
-                    <tr>
-                      <td><img src="img/ice-creame__1.png" width="33" height="33" alt=""></td>
-                      <td>Пломбир с апельсиновым джемом</td>
-                      <td>1,5 кг х <span>200 руб.</span></td>
-                      <td>300 руб.</td>
-                      <td><button type="button" aria-label="Удалить товар"></button></td>
-                    </tr>
-                    <tr>
-                      <td><img src="img/ice-creame__3.png" width="33" height="33" alt=""></td>
-                      <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                      <td>1,5 кг х <span>300 руб.</span></td>
-                      <td>450 руб.</td>
-                      <td><button type="button" aria-label="Удалить товар"></button></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
-              <li class="header-cart__item">
-                <p class="header-cart__text header-cart__text--bold">Итого : <span id="total-amount">0</span></p>
-                <a class="main-btn" href="blank.html">
-                  <span class="main-btn__transition"></span>
-                  Оформить заказ
-                </a>
-              </li>
-            </ul>
-          </div>
+          <ul class="main-nav__cart header-cart visually-hidden">
+            <li class="header-cart__item header-cart__item--divider">
+              <table class="header-cart__table cart-table">
+                <thead class="cart-table__head visually-hidden">
+                  <tr>
+                    <td>Изображение товара</td>
+                    <td>Название товара</td>
+                    <td>Колличество и сумма за кг</td>
+                    <td>Сумма в целом</td>
+                    <td>Удалить из корзины</td>
+                  </tr>
+                </thead>
+                <tbody class="cart-table__body">
+                  <tr>
+                    <td><img src="img/ice-creame__1.png" width="33" height="33" alt=""></td>
+                    <td>Пломбир с апельсиновым джемом</td>
+                    <td>1,5 кг х <span>200 руб.</span></td>
+                    <td>300 руб.</td>
+                    <td><button type="button" aria-label="Удалить товар"></button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="img/ice-creame__3.png" width="33" height="33" alt=""></td>
+                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td>1,5 кг х <span>300 руб.</span></td>
+                    <td>450 руб.</td>
+                    <td><button type="button" aria-label="Удалить товар"></button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="header-cart__item">
+              <p class="header-cart__text header-cart__text--bold">Итого : <span id="total-amount">0</span></p>
+              <a class="main-btn" href="blank.html">
+                <span class="main-btn__transition"></span>
+                Оформить заказ
+              </a>
+            </li>
+          </ul>
 
         </div>
+
+      </div>
     </nav>
 
-    <section class="page-header__dangling header-dangling">
+    <section class="lg-header__dangling header-dangling">
       <h2 class="visually-hidden">Время работы магазина</h2>
       <p>с 10 до 20, ежедневно</p>
       <a class="header-dangling__link" href="tel:+78124502525">8 812 450-25-25</a>

@@ -6,21 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Эта страница пуста, как и в моем кошельке</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/grid.css">
 </head>
 
-<body class="page-body">
-  <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img src="img/logo-main.svg" width="154" height="64" alt="Логотип Глейси Шоп">
-    </a>
+<body class="lg">
+  <header class="lg-header header container">
 
-    <nav class="page-header__nav main-nav">
+    <nav class="lg-header__nav main-nav">
+      <a class="main-nav__logo">
+        <img src="img/logo-main.svg" width="154" height="64" alt="Логотип Глейси Шоп">
+      </a>
+
       <ul class="main-nav__list main-nav__list--main">
         <li class="main-nav__item main-nav__item--dropdown">
           <a class="main-nav__link" href="blank.html">Каталог</a>
 
-          <ul class="main-nav__list main-nav__list--lvl2">
-            <li class="main-nav__item">
+          <ul class="main-nav__list main-nav__list--lvl2 main-nav__hidden">
+            <li class=" main-nav__item main-nav__item--special">
               <a class="main-nav__link" href="blank.html">Новинки</a>
             </li>
             <li class="main-nav__item">
@@ -30,7 +32,7 @@
               <a class="main-nav__link" href="blank.html">Щербеты</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="blank.html">Фруктовый лед</a>
+              <a class="main-nav__link" href="blank.html">Фруктовый&nbsp;лед</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="blank.html">Мелорин</a>
@@ -48,7 +50,7 @@
       <div class="main-nav__list main-nav__list--user">
 
         <div class="main-nav__item main-nav__item--btn main-nav__item--dropdown">
-          <a class="main-nav__link main-nav__link--btn">
+          <a class="main-nav__btn">
             <span class="main-nav__icon" aria-hidden="true">
               <svg class="svg" aria-hidden="true" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="svg__path-outer"
@@ -66,7 +68,7 @@
         </div>
 
         <div class="main-nav__item main-nav__item--btn main-nav__item--dropdown">
-          <a class="main-nav__link main-nav__link--btn" href="blank.html">
+          <a class="main-nav__btn main-nav__btn--p016px" href="blank.html">
             <span class="main-nav__icon" aria-hidden="true">
               <svg class="svg" aria-hidden="true" width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="svg__path-outer" d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff" />
@@ -103,7 +105,7 @@
         </div>
 
         <div class="main-nav__item main-nav__item--btn main-nav__item--dropdown">
-          <a class="main-nav__link main-nav__link--btn" href="blank.html">
+          <a class="main-nav__btn main-nav__btn--p016px" href="blank.html">
             <span class="main-nav__icon" aria-hidden="true">
               <svg class="svg" aria-hidden="true" width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="svg__path-outer"
@@ -133,7 +135,7 @@
       </div>
     </nav>
 
-    <section class="page-header__dangling header-dangling">
+    <section class="lg-header__dangling header-dangling">
       <h2 class="visually-hidden">Время работы магазина</h2>
       <p>с 10 до 20, ежедневно</p>
       <a class="header-dangling__link" href="tel:+78124502525">8 812 450-25-25</a>
