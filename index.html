@@ -413,39 +413,42 @@
     </div>
 
     <section class="contacts">
-      <div class="contacts__breakout">
-        <h2 class="visually-hidden">Где нас искать?</h2>
-        <address class="contacts__addr">
-          <div class="contacts__inner">
-            <p>Адрес главного офиса и офлайн-магазина:</p>
-            <p><b>ул. Большая Конюшенная, 19/8, Санкт-Петербург</b></p>
-          </div>
-          <div class="contacts__inner">
-            <p>Для заказов по телефону:</p>
-            <a href="tel:+78124502525"><b>8 812 450-25-25</b></a>
-            <p>(с 10 до 20 ежедневно)</p>
-          </div>
-        </address>
+      <div class="contacts__container container">
+        <div class="contacts__breakout">
+          <h2 class="visually-hidden">Где нас искать?</h2>
+          <address class="contacts__addr">
+            <div class="contacts__inner">
+              <p>Адрес главного офиса<br> и офлайн-магазина:</p>
+              <p><b>ул. Большая Конюшенная, 19/8, Санкт-Петербург</b></p>
+            </div>
+            <div class="contacts__inner">
+              <p>Для заказов по телефону:</p>
+              <a href="tel:+78124502525"><b>8 812 450-25-25</b></a>
+              <p>(с 10 до 20 ежедневно)</p>
+            </div>
+          </address>
 
-        <button class="main-btn contacts__btn" type="button">
-          <span class="main-btn__transition"></span>
-          Форма обратной связи
-        </button>
-      </div>
-
-      <div class="contacts__spread">
-        <!-- <iframe src="" frameborder="0"></iframe> -->
+          <button class="main-btn contacts__btn" type="button">
+            <span class="main-btn__transition"></span>
+            Форма обратной связи
+          </button>
+        </div>
         <img class="contacts__map" src="img/bg-map.jpg"
           alt="Мы находимся по адресу город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8" width="1200"
           height="430">
+      </div>
+
+      <div class="contacts__spread">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCQxRYekdB" width="100%" height="430" frameborder="0"
+          allowfullscreen="false"></iframe>
       </div>
     </section>
 
   </main>
 
-  <footer class="lg-footer container">
+  <footer class="lg-footer footer container">
 
-    <section class="main-footer__social social">
+    <section class="footer__social social">
       <h2 class="visually-hidden">Наши социальные сети</h2>
 
       <ul class="social__list">
@@ -493,7 +496,7 @@
       </ul>
     </section>
 
-    <section class="main-footer__info information">
+    <section class="footer__info information">
       <h2 class="visually-hidden">Дополнительная информация</h2>
 
       <ul class="information__list">
@@ -512,7 +515,7 @@
       </ul>
     </section>
 
-    <p class="main-footer__copyright htmlacademy">
+    <p class="footer__copyright htmlacademy">
       <a class="htmlacademy__logo" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/htmlacademy-logo.svg" width="108" height="39" alt="Логотип HTML Academy">
       </a>
