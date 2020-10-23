@@ -5,55 +5,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная Глейси Шоп</title>
-  <link rel="stylesheet" href="css/grid.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="lg-body">
   <header class="lg-header header container">
 
-    <nav class="lg-header__nav main-nav">
-      <a class="main-nav__logo">
+    <nav class="lg-header__nav navbar">
+      <a class="navbar__logo">
         <img src="img/logo-main.svg" width="154" height="64" alt="Логотип Глейси Шоп">
       </a>
 
-      <ul class="main-nav__list main-nav__list--menu">
-        <li class="main-nav__item main-nav__item--dropdown">
-          <a class="main-nav__link" href="blank.html">Каталог</a>
+      <ul class="navbar__list navbar__list--menu">
+        <li class="navbar__item navbar__item--dropdown">
+          <a class="navbar__link" href="blank.html">Каталог</a>
 
-          <div class="main-nav__dropdown main-nav__dropdown--left">
-            <ul class="main-nav__list main-nav__list--lvl2">
-              <li class=" main-nav__item main-nav__item--special">
-                <a class="main-nav__link" href="blank.html">Новинки</a>
+          <div class="navbar__dropdown navbar__dropdown--left">
+            <ul class="navbar__list navbar__list--lvl2">
+              <li class=" navbar__item navbar__item--special">
+                <a class="navbar__link" href="blank.html">Новинки</a>
               </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="inner.html">Сливочное</a>
+              <li class="navbar__item">
+                <a class="navbar__link" href="inner.html">Сливочное</a>
               </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="blank.html">Щербеты</a>
+              <li class="navbar__item">
+                <a class="navbar__link" href="blank.html">Щербеты</a>
               </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="blank.html">Фруктовый&nbsp;лед</a>
+              <li class="navbar__item">
+                <a class="navbar__link" href="blank.html">Фруктовый&nbsp;лед</a>
               </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="blank.html">Мелорин</a>
+              <li class="navbar__item">
+                <a class="navbar__link" href="blank.html">Мелорин</a>
               </li>
             </ul>
           </div>
         </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="blank.html">Доставка и оплата</a>
+        <li class="navbar__item">
+          <a class="navbar__link" href="blank.html">Доставка и оплата</a>
         </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="blank.html">О компании</a>
+        <li class="navbar__item">
+          <a class="navbar__link" href="blank.html">О компании</a>
         </li>
       </ul>
 
-      <div class="main-nav__list main-nav__list--user">
+      <div class="navbar__list navbar__list--user">
 
-        <div class="main-nav__item main-nav__item--dropdown">
-          <a class="main-nav__btn" href="blank.html">
-            <span class="main-nav__icon" aria-hidden="true">
+        <div class="navbar__item navbar__item--dropdown">
+          <a class="navbar__btn" href="blank.html">
+            <span class="navbar__icon" aria-hidden="true">
               <svg class="svg" aria-hidden="true" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="svg__path-outer"
                   d="M16 14.665l-4.921-4.932a6.144 6.144 0 00-.994-8.273 6.113 6.113 0 00-8.307.352 6.141 6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L14.659 16 16 14.665zm-9.918-4.288a4.245 4.245 0 01-3.928-2.63 4.269 4.269 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936 4.274 4.274 0 01-1.247 3.01 4.256 4.256 0 01-3.003 1.25z"
@@ -63,17 +62,17 @@
             <span class="visually-hidden">Поиск</span>
           </a>
 
-          <div class="main-nav__search main-nav__dropdown main-nav__dropdown--right">
-            <form class="main-nav__form" action="https://echo.htmlacademy.ru" method="get">
-              <input class="main-nav__input main-input" name="search" type="search" placeholder="Крем-брюле">
+          <div class="navbar__search navbar__dropdown navbar__dropdown--right">
+            <form class="navbar__form" action="https://echo.htmlacademy.ru" method="get">
+              <input class="navbar__input input" name="search" type="search" placeholder="Крем-брюле">
               <button class="visually-hidden" type="submit">Найти</button>
             </form>
           </div>
         </div>
 
-        <div class="main-nav__item main-nav__item--dropdown">
-          <a class="main-nav__btn main-nav__btn--p016px" href="blank.html">
-            <span class="main-nav__icon" aria-hidden="true">
+        <div class="navbar__item navbar__item--dropdown">
+          <a class="navbar__btn navbar__btn--p016px" href="blank.html">
+            <span class="navbar__icon" aria-hidden="true">
               <svg class="svg" aria-hidden="true" width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="svg__path-outer" d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff" />
                 <path class="svg__path-outer"
@@ -84,25 +83,24 @@
             Вход
           </a>
 
-          <div class="main-nav__dropdown main-nav__dropdown--right">
-            <form class="main-nav__form" action="https://echo.htmlacademy.ru" method="get">
-              <p class="main-nav__form-inner">
+          <div class="navbar__dropdown navbar__dropdown--right">
+            <form class="navbar__form" action="https://echo.htmlacademy.ru" method="get">
+              <p class="navbar__form-inner">
                 <label class="visually-hidden" for="login-email">Введите почту</label>
-                <input class="main-nav__input main-input" type="email" name="email" id="login-email"
+                <input class="navbar__input input" type="email" name="email" id="login-email"
                   placeholder="email@example.com">
               </p>
-              <p class="main-nav__form-inner">
+              <p class="navbar__form-inner">
                 <label class="visually-hidden" for="login-pass">Введите пароль</label>
-                <input class="main-nav__input main-input" type="password" name="password" id="login-pass"
-                  placeholder="......">
+                <input class="navbar__input input" type="password" name="password" id="login-pass" placeholder="......">
               </p>
-              <p class="main-nav__form-inner">
-                <a class="main-nav__link main-nav__link--black" href="blank.html">Забыли пароль?</a>
-                <a class="main-nav__link main-nav__link--black" href="blank.html">Новая регистрация</a>
+              <p class="navbar__form-inner">
+                <a class="navbar__link navbar__link--black" href="blank.html">Забыли пароль?</a>
+                <a class="navbar__link navbar__link--black" href="blank.html">Новая регистрация</a>
               </p>
-              <p class="main-nav__form-inner">
-                <button class="main-btn" type="submit">
-                  <span class="main-btn__transition"></span>
+              <p class="navbar__form-inner">
+                <button class="button" type="submit">
+                  <span class="button__transition"></span>
                   Войти
                 </button>
               </p>
@@ -110,9 +108,9 @@
           </div>
         </div>
 
-        <div class="main-nav__item main-nav__item--dropdown">
-          <a class="main-nav__btn main-nav__btn--p016px" href="blank.html">
-            <span class="main-nav__icon" aria-hidden="true">
+        <div class="navbar__item navbar__item--dropdown">
+          <a class="navbar__btn navbar__btn--p016px" href="blank.html">
+            <span class="navbar__icon" aria-hidden="true">
               <svg class="svg" aria-hidden="true" width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="svg__path-outer"
                   d="M7.034 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2zM16.103 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2zM5.703 2l-.241-2H0v2h3.668l1.511 13h14.108L21 2H5.703zm11.8 11H6.973L5.965 4h12.727l-1.189 9z"
@@ -123,8 +121,8 @@
             Пусто
           </a>
 
-          <div class="main-nav__dropdown main-nav__dropdown--right">
-            <ul class="main-nav__cart header-cart">
+          <div class="navbar__dropdown navbar__dropdown--right">
+            <ul class="navbar__cart header-cart">
               <li class="header-cart__item header-cart__item--divider">
                 <table class="header-cart__table cart-table">
                   <thead class="cart-table__head visually-hidden">
@@ -156,8 +154,8 @@
               </li>
               <li class="header-cart__item">
                 <p class="header-cart__text header-cart__text--bold">Итого : <span id="total-amount">0</span></p>
-                <a class="main-btn" href="blank.html">
-                  <span class="main-btn__transition"></span>
+                <a class="button" href="blank.html">
+                  <span class="button__transition"></span>
                   Оформить заказ
                 </a>
               </li>
@@ -169,10 +167,10 @@
       </div>
     </nav>
 
-    <section class="header-dangling">
+    <section class="header__dangling">
       <h2 class="visually-hidden">Время работы магазина</h2>
       <p>с 10 до 20, ежедневно</p>
-      <a class="header-dangling__link" href="tel:+78124502525">8 812 450-25-25</a>
+      <a href="tel:+78124502525">8 812 450-25-25</a>
     </section>
   </header>
 
@@ -180,50 +178,51 @@
     <div class="lg-content container">
       <h1 class="visually-hidden">Глейси - магазин мороженого собственного производства</h1>
 
-      <section class="slider">
+      <section class="carousel">
         <h2 class="visually-hidden">Вкусное предложение</h2>
 
-        <ul class="slider__slides" aria-label="Слайды">
-          <li class="slider__slide">
-            <h3 class="slider__title">Крем-брюле и пломбир с малиновым джемом</h3>
-            <div class="slider__picture">
+        <ul class="carousel__slides" aria-label="Слайды">
+          <li class="carousel__slide">
+            <h3 class="carousel__title">Крем-брюле и пломбир с малиновым джемом</h3>
+            <div class="carousel__picture">
               <img src="img/double-ice-creame__1.png" width="647" height="584"
                 alt="Два аппетитных мороженого в вафельном рожке с разными вкусами">
             </div>
-            <a class="main-btn main-btn--big slider__btn" href="blank.html">
-              <span class="main-btn__transition"></span>
+            <a class="button button--big carousel__btn" href="blank.html">
+              <span class="button__transition"></span>
               Давайте оба!
             </a>
           </li>
-          <li class="slider__slide visually-hidden">
-            <h3 class="slider__title">Шоколадный пломбир и лимонный сорбет</h3>
-            <img class="slider__picture" src="img/double-ice-creame__2.png" width="647" height="584"
+          <li class="carousel__slide visually-hidden">
+            <h3 class="carousel__title">Шоколадный пломбир и лимонный сорбет</h3>
+            <img class="carousel__picture" src="img/double-ice-creame__2.png" width="647" height="584"
               alt="Два аппетитных мороженого в вафельном рожке с разными вкусами">
-            <a class="main-btn main-btn--big slider__btn" href="blank.html">
-              <span class="main-btn__transition"></span>
+            <a class="button button--big carousel__btn" href="blank.html">
+              <span class="button__transition"></span>
               Давайте оба!
             </a>
           </li>
-          <li class="slider__slide visually-hidden">
-            <h3 class="slider__title">Пломбир с помадкой и клубничный щербет</h3>
-            <img class="slider__picture" src="img/double-ice-creame__3.png" width="647" height="584"
+          <li class="carousel__slide visually-hidden">
+            <h3 class="carousel__title">Пломбир с помадкой и клубничный щербет</h3>
+            <img class="carousel__picture" src="img/double-ice-creame__3.png" width="647" height="584"
               alt="Два аппетитных мороженого в вафельном рожке с разными вкусами">
-            <a class="main-btn main-btn--big slider__btn" href="blank.html">
-              <span class="main-btn__transition"></span>
+            <a class="button button--big carousel__btn" href="blank.html">
+              <span class="button__transition"></span>
               Давайте оба!
             </a>
           </li>
         </ul>
 
-        <ul class="slider__dots visually-hidden" aria-label="Навигация по слайдеру">
-          <li class="slider__dot-item">
-            <button class="slider__dot slider__dot--is-current" type="button" aria-label="К первому слайду"></button>
+        <ul class="carousel__dots visually-hidden" aria-label="Навигация по слайдеру">
+          <li class="carousel__dot-item">
+            <button class="carousel__dot carousel__dot--is-current" type="button"
+              aria-label="К первому слайду"></button>
           </li>
-          <li class="slider__dot-item">
-            <button class="slider__dot" type="button" aria-label="Ко второму слайду"></button>
+          <li class="carousel__dot-item">
+            <button class="carousel__dot" type="button" aria-label="Ко второму слайду"></button>
           </li>
-          <li class="slider__dot-item">
-            <button class="slider__dot" type="button" aria-label="К третьему слайду"></button>
+          <li class="carousel__dot-item">
+            <button class="carousel__dot" type="button" aria-label="К третьему слайду"></button>
           </li>
         </ul>
       </section>
@@ -233,28 +232,28 @@
 
         <ul class="promo__list">
           <li class="promo__item">
-            <article class="promo-card promo-card--background-1">
-              <h3 class="promo-card__title">Малинка даром!</h3>
-              <p class="promo-card__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
+            <div class="promo__card promo__card--background-1">
+              <h3 class="promo__card-title">Малинка даром!</h3>
+              <p class="promo__card-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
                 малинового варенья бесплатно.
               </p>
-              <a class="main-btn promo-card__btn" href="blank.html">
-                <span class="main-btn__transition"></span>
+              <a class="button promo__btn" href="blank.html">
+                <span class="button__transition"></span>
                 Хочу варенье!
               </a>
-            </article>
+            </div>
           </li>
           <li class="promo__item">
-            <article class="promo-card promo-card--background-2">
-              <h3 class="promo-card__title">Шоколадки даром!</h3>
-              <p class="promo-card__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной
+            <div class="promo__card promo__card--background-2">
+              <h3 class="promo__card-title">Шоколадки даром!</h3>
+              <p class="promo__card-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной
                 присыпки совершенно
                 бесплатно.</p>
-              <a class="main-btn promo-card__btn" href="blank.html">
-                <span class="main-btn__transition"></span>
+              <a class="button promo__btn" href="blank.html">
+                <span class="button__transition"></span>
                 Хочу шоколадки!
               </a>
-            </article>
+            </div>
           </li>
         </ul>
       </section>
@@ -264,91 +263,91 @@
 
         <ul class="bestsellers__list">
           <li class="bestsellers__item">
-            <article class="product-card product-card--hit-mark">
-              <h3 class="product-card__title">
-                <a class="product-card__link" href="blank.html">
+            <article class="card-product card-product--hit-mark">
+              <h3 class="card-product__title">
+                <a class="card-product__link" href="blank.html">
                   Сливочное с апельсиновым джемом и цитрусовой стружкой
                 </a>
               </h3>
-              <div class="product-card__picture">
+              <div class="card-product__picture">
                 <img src="img/ice-creame__1.png" width="267" height="267"
                   alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </div>
-              <p class="product-card__price">
-                310 &#8381;<span class="product-card__price-subscript">/кг</span>
+              <p class="card-product__price">
+                310 &#8381;<span class="card-product__price-subscript">/кг</span>
               </p>
 
-              <div class="product-card__overlay">
-                <a class="main-btn" href="blank.html">
-                  <span class="main-btn__transition"></span>
+              <div class="card-product__overlay">
+                <a class="button" href="blank.html">
+                  <span class="button__transition"></span>
                   Быстрый просмотр
                 </a>
               </div>
             </article>
           </li>
           <li class="bestsellers__item">
-            <article class="product-card product-card--hit-mark">
-              <h3 class="product-card__title">
-                <a class="product-card__link" href="blank.html">
+            <article class="card-product card-product--hit-mark">
+              <h3 class="card-product__title">
+                <a class="card-product__link" href="blank.html">
                   Сливочно-кофейное с кусочками шоколада
                 </a>
               </h3>
-              <div class="product-card__picture">
+              <div class="card-product__picture">
                 <img src="img/ice-creame__2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
               </div>
-              <p class="product-card__price">
-                380 &#8381;<span class="product-card__price-subscript">/кг</span>
+              <p class="card-product__price">
+                380 &#8381;<span class="card-product__price-subscript">/кг</span>
               </p>
 
-              <div class="product-card__overlay">
-                <a class="main-btn" href="blank.html">
-                  <span class="main-btn__transition"></span>
+              <div class="card-product__overlay">
+                <a class="button" href="blank.html">
+                  <span class="button__transition"></span>
                   Быстрый просмотр
                 </a>
               </div>
             </article>
           </li>
           <li class="bestsellers__item">
-            <article class="product-card product-card--hit-mark">
-              <h3 class="product-card__title">
-                <a class="product-card__link" href="blank.html">
+            <article class="card-product card-product--hit-mark">
+              <h3 class="card-product__title">
+                <a class="card-product__link" href="blank.html">
                   Сливочно-клубничное с присыпкой из белого шоколада
                 </a>
               </h3>
-              <div class="product-card__picture">
+              <div class="card-product__picture">
                 <img src="img/ice-creame__3.png" width="267" height="267"
                   alt="Сливочно-клубничное с присыпкой из белого шоколада">
               </div>
-              <p class="product-card__price">
-                355 &#8381;<span class="product-card__price-subscript">/кг</span>
+              <p class="card-product__price">
+                355 &#8381;<span class="card-product__price-subscript">/кг</span>
               </p>
 
-              <div class="product-card__overlay">
-                <a class="main-btn" href="blank.html">
-                  <span class="main-btn__transition"></span>
+              <div class="card-product__overlay">
+                <a class="button" href="blank.html">
+                  <span class="button__transition"></span>
                   Быстрый просмотр
                 </a>
               </div>
             </article>
           </li>
           <li class="bestsellers__item">
-            <article class="product-card product-card--hit-mark">
-              <h3 class="product-card__title">
-                <a class="product-card__link" href="blank.html">
+            <article class="card-product card-product--hit-mark">
+              <h3 class="card-product__title">
+                <a class="card-product__link" href="blank.html">
                   Сливочное крем-брюле с карамельной подливкой
                 </a>
               </h3>
-              <div class="product-card__picture">
+              <div class="card-product__picture">
                 <img src="img/ice-creame__4.png" width="267" height="267"
                   alt="Сливочное крем-брюле с карамельной подливкой">
               </div>
-              <p class="product-card__price">
-                415 &#8381;<span class="product-card__price-subscript">/кг</span>
+              <p class="card-product__price">
+                415 &#8381;<span class="card-product__price-subscript">/кг</span>
               </p>
 
-              <div class="product-card__overlay">
-                <a class="main-btn" href="blank.html">
-                  <span class="main-btn__transition"></span>
+              <div class="card-product__overlay">
+                <a class="button" href="blank.html">
+                  <span class="button__transition"></span>
                   Быстрый просмотр
                 </a>
               </div>
@@ -401,10 +400,10 @@
 
           <form class="mailing__form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="mailing-email">Ваша почта:</label>
-            <input class="mailing__input main-input" type="email" name="mailing-email" id="mailing-email"
+            <input class="mailing__input input" type="email" name="mailing-email" id="mailing-email"
               placeholder="email@example.com">
-            <button class="main-btn mailing__btn" type="submit">
-              <span class="main-btn__transition"></span>
+            <button class="button mailing__btn" type="submit">
+              <span class="button__transition"></span>
               Отправить
             </button>
           </form>
@@ -428,8 +427,8 @@
             </div>
           </address>
 
-          <button class="main-btn contacts__btn" type="button">
-            <span class="main-btn__transition"></span>
+          <button class="button contacts__btn" type="button">
+            <span class="button__transition"></span>
             Форма обратной связи
           </button>
         </div>
@@ -535,12 +534,12 @@
         <ul class="feedback__list">
           <li class="feedback__item">
             <label class="visually-hidden" for="feedback-name">Введите ваше имя и фамилию:</label>
-            <input class="main-input feedback__input" type="text" name="feedback-name" id="feedback-name"
+            <input class="input feedback__input" type="text" name="feedback-name" id="feedback-name"
               placeholder="Имя Фамилия">
           </li>
           <li class="feedback__item">
             <label class="visually-hidden" for="feedback-email">Введите почту:</label>
-            <input class="main-input feedback__input" type="email" name="feedback-email" id="feedback-email"
+            <input class="input feedback__input" type="email" name="feedback-email" id="feedback-email"
               placeholder="email@example.com">
           </li>
           <li class="feedback__item">
@@ -551,8 +550,8 @@
         </ul>
       </fieldset>
 
-      <button class="main-btn feedback__btn" type="submit">
-        <span class="main-btn__transition"></span>
+      <button class="button feedback__btn" type="submit">
+        <span class="button__transition"></span>
       </button>
     </form>
   </section>

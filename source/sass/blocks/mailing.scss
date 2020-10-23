@@ -1,0 +1,31 @@
+
+
+.mailing {
+  display: flex;
+  background-image: url(../img/mailing-pattern.jpg);
+  border-radius: 16px;
+  color: var(--color-grey-medium);
+
+  &__inner {
+    margin: 5px 6px;
+    padding: 23px 20px;
+    border-radius: 16px;
+    background-color: var(--color-grey-lightes);
+  }
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 42px;
+  }
+
+  &__form {
+    display: flex;
+    column-gap: 10px;
+  }
+
+  &__input {}
+
+  &__btn {
+    min-width: 130px;
+  }
+}

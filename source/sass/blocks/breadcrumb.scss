@@ -1,0 +1,19 @@
+.breadcrumb {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {}
+
+  &__link {
+    color: var(--color-white);
+  }
+
+  &__link--is-current {}
+}

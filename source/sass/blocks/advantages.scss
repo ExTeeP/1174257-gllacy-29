@@ -1,0 +1,54 @@
+
+
+.advantages {
+  margin-top: -73px;
+  padding: 24px 20px;
+  grid-column: 1/-1;
+  border-radius: 16px;
+  color: var(--color-grey-dark);
+  background-image: url(../img/advantages-pattern.jpg);
+  background-repeat: repeat;
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 7px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px 26px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 55px;
+  }
+
+  &__item p {
+    margin: 0;
+  }
+
+  &__item::before {
+    content: '';
+    position: absolute;
+    display: inline-flex;
+    width: 49px;
+    height: 49px;
+    top: -8px;
+    left: 0;
+    background-color: transparent;
+    border: 2px solid var(--color-grey-dark);
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,56 @@
+:root {
+  --page-color-primary: #849d8f;
+  --page-color-secondary: #8996a6;
+  --page-color-tertiary: #9d8b84;
+
+  --color-white: #ffffff;
+  --color-white-20a: rgba(255, 255, 255, 0.2);
+  --color-white-40a: rgba(255, 255, 255, 0.4);;
+  --color-white-50a: rgba(255, 255, 255, 0.5);
+  --color-white-80a: rgba(255, 255, 255, 0.8);
+
+  --color-black-03a: rgba(50, 50, 50, 0.3);
+
+  --color-grey-lightes: #f8f7f4;
+  --color-grey-medium: #5a5a5a;
+  --color-grey-dark: #323232;
+
+  --color-orange-light: #f26843;
+  --color-orange-medium: #e74a35;
+
+  --button-gradient: linear-gradient(
+      180deg,
+      var(--color-orange-light) 0%,
+      var(--color-orange-medium) 100%
+    );
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $main-font;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  color: var(--color-white) ;
+  background-color: var(--page-color-primary);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}

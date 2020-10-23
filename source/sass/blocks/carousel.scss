@@ -1,0 +1,75 @@
+.carousel {
+  grid-column: 1/-1;
+  position: relative;
+  padding-top: 272px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    margin-left: -362px;
+    width: 716px;
+    height: 716px;
+    background: rgba(215, 242, 227, 0.75);
+    filter: blur(250px);
+    z-index: -1;
+  }
+
+  &__slides {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 28px;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  &__picture {
+    position: absolute;
+    top: -40px;
+    z-index: -1;
+  }
+
+  &__btn {}
+
+  &__dots {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__dot-item {}
+
+  &__dot {
+    width: 21px;
+    height: 21px;
+    background-color: transparent;
+    border: 2px solid var(--color-white);
+    border-radius: 50%;
+  }
+
+  &__dot:focus,
+  &__dot:hover {
+    background-color: var(--color-white-40a);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  &__dot--current {
+    background-color: var(--color-white);
+    // cursor: default;
+  }
+}

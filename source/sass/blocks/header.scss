@@ -1,0 +1,29 @@
+.header {
+  padding-top: 9px;
+  position: relative;
+}
+
+.header__dangling {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+}
+
+.header__dangling p {
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.header__dangling a[href^='tel:'] {
+  font-size: 22px;
+  line-height: 24px;
+  color: inherit;
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: #FFBC9E
+  }
+
+}

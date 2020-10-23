@@ -1,0 +1,32 @@
+.blog-article {
+  min-height: 220px;
+  grid-column: 1/2;
+  background-image: url('../img/article-bg-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 17px 20px;
+  color: var(--color-grey-dark);
+  background-color: var(--color-white);
+  border-radius: 16px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__subtitle {
+    width: 300px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: underline;
+  }
+}

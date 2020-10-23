@@ -1,0 +1,51 @@
+
+
+.information {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    row-gap: 5px;
+    column-gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {}
+
+  &__item--special {
+    font-weight: bold;
+    position: relative;
+  }
+
+  &__item--special::before {
+    content: '';
+    width: 15px;
+    height: 13px;
+    position: absolute;
+    top: 4px;
+    left: -22px;
+    background-image: url("../img/icon-heart.svg");
+  }
+
+  &__link {
+    color: var(--color-white);
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.2);
+  }
+
+  &__link {
+    outline: none;
+  }
+
+  &__link:focus,
+  &__link:hover,
+  &__link:active {
+    color: #FFBC9E;
+    text-decoration-color: rgba(255, 188, 158, 0.3);
+  }
+}

@@ -1,0 +1,58 @@
+.promo {
+  grid-column: 1/-1;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 26px;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__card {
+    min-height: 229px;
+    padding: 13px 22px 22px 16px;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: min-content 1fr min-content;
+    font-weight: bold;
+    color: var(--color-white, #ffffff);
+    border-radius: 16px;
+  }
+
+  &__card--background-1 {
+    background-image: url(../img/promo-1.jpg);
+    background-repeat: repeat;
+  }
+
+  &__card--background-2 {
+    background-image: url(../img/promo-2.jpg);
+    background-repeat: repeat;
+  }
+
+  &__card-title {
+    grid-column: 1/-1;
+    margin: 0;
+    margin-bottom: 18px;
+    font-size: 35px;
+    line-height: 41px;
+  }
+
+  &__card-text {
+    grid-column: 1/-1;
+    margin: 0;
+    margin-bottom: 17px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__btn {
+    grid-column: -1/-2;
+    padding: 12px 22px
+  }
+}

@@ -1,0 +1,29 @@
+.page {
+  height: 100%;
+}
+
+.lg-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.lg-header__nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0 9px;
+}
+
+.lg-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 26px;
+  padding-bottom: 40px;
+}
+
+.lg-footer {
+  display: grid;
+  grid-template-columns: min-content min-content 200px;
+  justify-content: space-between;
+}
